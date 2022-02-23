@@ -7,7 +7,7 @@ const Layout = ({children,setIsDarkMode,isDarkMode}) => {
     return (
       <div
         className={`${
-          isDarkMode ? "bg-dark text-white-50" : "bg-light"
+          isDarkMode ? "bg-dark text-white" : "bg-light"
         }`}
       >
         <Header setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />

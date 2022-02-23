@@ -22,41 +22,44 @@ const Home = ({ projectList }) => {
                   <img
                     src={starSvg}
                     alt="star svg"
-                    className="position-absolute w-100 rounded-circle "
+                    className="position-absolute w-100 rounded-circle"
                   />
-                  <h1 className="hero-text text-left">What I do?</h1>
+                  <h1 className="hero-text text-left display-3 fw-bold">
+                    Who am I?
+                  </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident assumenda neque eius molestiae blanditiis quas
-                    sequi sunt omnis autem officiis fugit, id officia
-                    consequatur numquam
+                    I am a self-motivated developer that is focused on creating
+                    high-quality solutions to problems. 
                   </p>
                   <br />
-                  <blockquote className="text-center">
-                    Most of y'all are wyling, you are not to be tamed
+                  <blockquote className="text-center fst-italic">
+                    "When I say I'ma do it? I'ma do it."
+                    <br />
+                    <span className="text-success">-Azubire Peter</span>
                   </blockquote>
                 </Col>
-                <Col className="col-md-6 col-12">
+                <Col className="col-md-6 col-12 hover-zoom">
                   <img src={svg2} alt="vector-img" className="img-fluid" />
                 </Col>
               </Row>
               {/* section 2 */}
               <Row className="pt-5" id="">
-                <Col className="col-md-6 col-12">
+                <Col className="col-md-6 col-12 hover-zoom">
                   <img src={svg1} alt="vector-img" className="img-fluid" />
                 </Col>
                 <Col className="col-md-6 col-12 order-first order-md-last d-flex justify-content-center flex-column position-relative">
-                  {/* <div className="w-50 position-absolute h-50 top-0 rounded-circle bg-secondary"></div> */}
-                  <h1 className="hero-text text-left">What I do?</h1>
+                  <h1 className="hero-text text-left display-3 fw-bold">
+                    What I do?
+                  </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Provident assumenda neque eius molestiae blanditiis quas
-                    sequi sunt omnis autem officiis fugit, id officia
-                    consequatur numquam
+                    With 2+ years of Experience as a developer, I build interactive, maintainable, predictable,scalable, and high performing web
+                    applications with a wide range of tools. 
                   </p>
                   <br />
                   <blockquote className="text-center">
-                    This one is not your type@ of shit
+                    "First, solve the problem. Then write the code."
+                    <br />
+                    <span className="text-danger">-John Johnson</span>
                   </blockquote>
                 </Col>
               </Row>
@@ -64,17 +67,17 @@ const Home = ({ projectList }) => {
           </section>
 
           {/* scetion 2 */}
-          <section id="skills" className="py-5">
+          <section id="skills" className="pb-5">
             <Skills />
           </section>
 
           {/* scetion 3 */}
-          <section id="projects" className="py-5">
+          <section id="projects" className="pb-5">
             <Projects projects={projectList} />
           </section>
 
           {/* scetion 3 */}
-          <section id="about" className="py-5">
+          <section id="about" className="pb-5">
             <About />
           </section>
         </Container>

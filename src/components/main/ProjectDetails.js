@@ -1,7 +1,6 @@
-import { useState, useEffect, Fragment } from 'react';
+import { useState, useEffect } from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBBtn} from 'mdb-react-ui-kit';
 import { useParams } from 'react-router-dom';
-
 
 const ProjectDetails = ({ projectList }) => {
     const [state, setstate] = useState({
@@ -13,20 +12,16 @@ const ProjectDetails = ({ projectList }) => {
     });
     const url = useParams();
     const projectId = parseInt(url.id);
+    const {name,desc,img,stack} = state;
     
     useEffect(() => {
         const getId = async (id) => {
             const project = await projectList.find((item)=>(item.id === id));
              setstate(()=>(project));
-            //  console.log(project);
         }   
         getId(projectId);
-    },[projectId]);
-
-        const {name,desc,img,address,stack} = state;
-        // console.log(name);
-        // console.log(stack);
-
+      },[projectId,projectList]);
+  
   return (
     <>
       <MDBContainer className="py-5 h-100">
@@ -34,7 +29,7 @@ const ProjectDetails = ({ projectList }) => {
           <MDBCol
             md="6"
             sm="12"
-            className="d-flex flex-column  text-center"
+            className="d-flex flex-column  text-center order-last"
           >
             <h1 className="display-3 fw-bold">{name}</h1>
             <p className="fs-6 text-start">{desc}</p>
@@ -52,22 +47,22 @@ const ProjectDetails = ({ projectList }) => {
           </MDBCol>
         </MDBRow>
 
-        <MDBRow className='justify-content-center'>
-            <h1 className='text-center py-4'>
-              <span className='hero-text text-danger'>Technologies</span> Used
-            </h1>
-                {stack.map((item,index)=>{
-                    const {icon,name} = item;
-                    return (
-                      <MDBCol
-                        key={index}
-                        className="col-md-2 col-3 d-flex flex-column justify-content-center align-items-center align-content-center"
-                      >
-                        {icon}
-                        <p className="m-0">{name}</p>
-                      </MDBCol>
-                    );
-                })}
+        <MDBRow className="justify-content-center">
+          <h1 className="text-center py-4">
+            <span className="hero-text text-danger">Technologies</span> Used
+          </h1>
+          {stack.map((item, index) => {
+            const { icon, name } = item;
+            return (
+              <MDBCol
+                key={index}
+                className="col-md-2 col-3 d-flex flex-column justify-content-center align-items-center align-content-center"
+              >
+                {icon}
+                <p className="m-0">{name}</p>
+              </MDBCol>
+            );
+          })}
         </MDBRow>
       </MDBContainer>
     </>
