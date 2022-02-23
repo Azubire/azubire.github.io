@@ -1,7 +1,7 @@
 import {Row, Col, Container } from 'react-bootstrap';
 import Hero from './Hero';
-import svg1 from '../../assets/img/time.png';
-import svg2 from '../../assets/img/hero.png';
+import svg1 from '../../assets/img/laptop.png';
+import svg2 from '../../assets/img/amico.svg';
 import Projects from './Projects';
 import Skills from './Skills';
 import About from './About';
@@ -18,7 +18,10 @@ const Home = ({ projectList }) => {
             <Container>
               {/* section 1 */}
               <Row className="pt-5 " id="">
-                <Col className="col-md-6 col-12 d-flex justify-content-center flex-column position-relative ">
+                <Col className="col-md-6 col-12 hover-zoom">
+                  <img src={svg2} alt="vector-img" className="img-fluid" />
+                </Col>
+                <Col className="col-md-6 col-12 order-first order-md-last d-flex justify-content-center flex-column position-relative ">
                   <img
                     src={starSvg}
                     alt="star svg"
@@ -29,7 +32,7 @@ const Home = ({ projectList }) => {
                   </h1>
                   <p>
                     I am a self-motivated developer that is focused on creating
-                    high-quality solutions to problems. 
+                    high-quality solutions to problems.
                   </p>
                   <br />
                   <blockquote className="text-center fst-italic">
@@ -38,22 +41,17 @@ const Home = ({ projectList }) => {
                     <span className="text-success">-Azubire Peter</span>
                   </blockquote>
                 </Col>
-                <Col className="col-md-6 col-12 hover-zoom">
-                  <img src={svg2} alt="vector-img" className="img-fluid" />
-                </Col>
               </Row>
               {/* section 2 */}
               <Row className="pt-5" id="">
-                <Col className="col-md-6 col-12 hover-zoom">
-                  <img src={svg1} alt="vector-img" className="img-fluid" />
-                </Col>
-                <Col className="col-md-6 col-12 order-first order-md-last d-flex justify-content-center flex-column position-relative">
+                <Col className="col-md-6 col-12  d-flex justify-content-center flex-column position-relative">
                   <h1 className="hero-text text-left display-3 fw-bold">
                     What I do?
                   </h1>
                   <p>
-                    With 2+ years of Experience as a developer, I build interactive, maintainable, predictable,scalable, and high performing web
-                    applications with a wide range of tools. 
+                    With 2+ years of Experience as a developer, I build
+                    interactive, maintainable, predictable,scalable, and high
+                    performing web applications with a wide range of tools.
                   </p>
                   <br />
                   <blockquote className="text-center">
@@ -61,6 +59,9 @@ const Home = ({ projectList }) => {
                     <br />
                     <span className="text-danger">-John Johnson</span>
                   </blockquote>
+                </Col>
+                <Col className="col-md-6 col-12 hover-zoom">
+                  <img src={svg1} alt="vector-img" className="img-fluid" />
                 </Col>
               </Row>
             </Container>

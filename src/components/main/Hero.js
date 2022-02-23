@@ -1,5 +1,5 @@
 import { Col,Row, Container } from "react-bootstrap"
-import social from '../../assets/img/development.svg';
+import social from '../../assets/img/about.png';
 
 
 const Hero = (params) => {
@@ -9,22 +9,22 @@ const Hero = (params) => {
         <Container>
           <Row>
             <Col className=" col-12 col-md-7 pt-5 d-flex justify-content-center align-items-center">
-              <h2 className="hero-text text-sm-start py-sm-0 py-3 text-center">
+              <h2 className="hero-text text-sm-start py-sm-0 py-3 text-center ">
                 Hello <span className="span-text text-primary">there! &#x1F44B;</span>
                 <br />
                 I'm <span className="span-name">Peter Azubire,</span> a
-                <span className="span-text text-success"> Software </span>
-                Developer, I'm a tech enthusiast, curious about new{" "}
-                <span className="span-text text-success">technologies</span>
+                <span className="span-text text-warning"> Software </span>
+                Developer, a tech enthusiast, curious about new{" "}
+                <span className="span-text text-warning">technologies</span>
                 <br />
                 <br />
-                <span className="span-text-greet">
+                <span className="span-text-greeth text-success">
                   Great to meet you! &#x1F60E;
                 </span>
               </h2>
             </Col>
-            <Col className=" col-12 col-md-5 pt-5">
-              <img className="img-fluid hero-img" src={social} alt="hero-svg" />
+            <Col className=" col-12 col-md-5 pt-5 hover-zoom">
+              <img className="img-fluid" src={social} alt="hero-svg" />
             </Col>
           </Row>
         </Container>

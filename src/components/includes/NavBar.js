@@ -54,8 +54,7 @@ const NavBar = ({ setIsDarkMode ,isDarkMode}) => {
         </div>
         <Nav className="d-none d-sm-flex">
           <NavElement />
-          {/* <Button variant="outline-secondary">Resume</Button> */}
-          <MDBBtn color="success" outline>
+          <MDBBtn color="success" outline className='ms-2'> 
             Resume
           </MDBBtn>
         </Nav>

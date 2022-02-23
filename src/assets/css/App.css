@@ -66,7 +66,7 @@ html{
 
 }
 .svg-hero{
-    background-image: url('../img/wave3.svg');
+    /* background-image: url('../img/wave3.svg'); */
     background-repeat: no-repeat;
     background-position: bottom;
 }

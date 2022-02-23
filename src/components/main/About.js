@@ -1,4 +1,6 @@
 import {Container, Row, Col, Card} from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { FaGithub, FaHandPointRight, FaLinkedin, FaTwitter } from "react-icons/fa";
 import profile from '../../assets/img/doctors-cuate.svg'
 
 const About = () => {
@@ -12,8 +14,8 @@ const About = () => {
           </Col>
         </Row>
         <Row>
-          <Col className="col-md-4">
-            <Card className="border-0 shadow-none">
+          <Col className="col-md-4 d-flex justify-content-center align-items-center">
+            <Card className="border-0 shadow-none w-100">
               <img src={profile} alt="" className="img-circle mt-3" />
               <Card.Body>
                 <Card.Text className="text-dark text-center">
@@ -25,13 +27,39 @@ const About = () => {
           <Col className="col-md-8 col-12 pt-5 pt-md-0">
             <h1>Bio</h1>
             <p>
-              Hey <span className="span-texts">everyone! &#x1F44B;</span><br/>
+              Hey <span className="span-texts">everyone! &#x1F44B;</span>
+              <br />
               I am Azubire Peter from Bolgatanga, Ghana.
               <br />I am currently a 3rd year Computer Science student of
-              <a href="https://ktu.edu.gh" rel='noreferrer' target={'_blank'} className='text-decoration-none'> Koforidua Technical University </a>
-              at Koforidua, Ghana. I've always loved programming but never took the step to do it until 2019 when I decided to start a career as a developer. I've since been an enthusiast to web development, I am constantly learning and improving on my current skill set, getting my hands on new technologies.
+              <a
+                href="https://ktu.edu.gh"
+                rel="noreferrer"
+                target={"_blank"}
+                className="text-decoration-none"
+              >
+                {" "}
+                Koforidua Technical University{" "}
+              </a>
+              at Koforidua, Ghana. I've always loved programming but never took
+              the step to do it until 2019 when I decided to start a career as a
+              developer. I've since been an enthusiast to web development, I am
+              constantly learning and improving on my current skill set, getting
+              my hands on new technologies.
             </p>
-            <p>Aside coding, i like to spend my time playing video games, watching movies and football.</p>
+            <p>
+              Aside coding, i like to spend my time playing video games,
+              watching movies and football.
+            </p>
+            <p className='d-inline'>Lets connect  : <FaHandPointRight size={20}/></p>
+            <Link to="#" className="mx-3">
+              <FaGithub size={25} />
+            </Link>
+            <Link to="#" className="mx-3">
+              <FaLinkedin size={25} />
+            </Link>
+            <Link to="#" className="mx-3">
+              <FaTwitter size={25} />
+            </Link>
           </Col>
         </Row>
       </Container>
