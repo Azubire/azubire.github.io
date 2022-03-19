@@ -1,11 +1,16 @@
-import { useState,useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import './assets/css/App.css';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
+import "./assets/css/App.css";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Layout from './components/layout/Layout';
-import Home from './components/main/Home';
-import ProjectDetails from './components/main/ProjectDetails';
+import Layout from "./components/layout/Layout";
+import Home from "./components/main/Home";
+import ProjectDetails from "./components/main/ProjectDetails";
 import p1 from "./assets/img/project3.png";
 import p2 from "./assets/img/mobile01.png";
 import p3 from "./assets/img/software.png";
@@ -113,39 +118,45 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [projectList] = useState(projects);
 
-    var dark;
-    const boolean = localStorage.getItem('isDarkMode');
-    if(boolean === 'true'){
-      dark = true;
-    }else{
-      dark = false;
-    }
+  var dark;
+  const boolean = localStorage.getItem("isDarkMode");
+  if (boolean === "true") {
+    dark = true;
+  } else {
+    dark = false;
+  }
 
-    useEffect(()=>{
-      dark ? setIsDarkMode(true) : setIsDarkMode(false);
-    },[dark])
-  
-  
-  
-    return (
-      <Router>
-        <Routes>
+  useEffect(() => {
+    dark ? setIsDarkMode(true) : setIsDarkMode(false);
+  }, [dark]);
+
+  return (
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={
+            <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}>
+              <Outlet />
+            </Layout>
+          }
+        >
           <Route
-            path="/"
             exact
-            element={
-              <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}>
-                <Outlet />
-              </Layout>
-            }
-          >
-            <Route exact path="/" element={<Home projectList={projectList}/>}></Route>
-            <Route exact path='/project-details/:id' element={<ProjectDetails projectList={projectList}/>}/>
-          </Route>
+            path="/"
+            element={<Home projectList={projectList} />}
+          ></Route>
+          <Route
+            exact
+            path="/project-details/:id"
+            element={<ProjectDetails projectList={projectList} />}
+          />
+        </Route>
 
-          <Route path="*" element={<h1>404</h1>}></Route>
-        </Routes>
-      </Router>
-    );
-}
+        <Route path="*" element={<h1>404</h1>}></Route>
+      </Routes>
+    </Router>
+  );
+};
 export default App;
