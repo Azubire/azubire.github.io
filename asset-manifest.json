@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6a7f0210.css",
-    "main.js": "/portfolio/static/js/main.975aecbd.js",
+    "main.css": "/portfolio/static/css/main.1b602e7a.css",
+    "main.js": "/portfolio/static/js/main.8e603e3f.js",
+    "static/media/azubire.jpg": "/portfolio/static/media/azubire.5a51db2bb6ff688e58eb.jpg",
     "static/media/mobile01.png": "/portfolio/static/media/mobile01.90e9634ef49df165140b.png",
     "static/media/software.png": "/portfolio/static/media/software.f4b8f0f92ae42e8c6f01.png",
     "static/media/laptop.png": "/portfolio/static/media/laptop.7cc131a636d3eeb02200.png",
@@ -9,14 +10,13 @@
     "static/media/about.png": "/portfolio/static/media/about.192efbf9dc977ebb61db.png",
     "static/media/project3.png": "/portfolio/static/media/project3.5520873047d55986d023.png",
     "static/media/amico.svg": "/portfolio/static/media/amico.0e75d69669bbd635f59e4b1a7b87598f.svg",
-    "static/media/doctors-cuate.svg": "/portfolio/static/media/doctors-cuate.7a075de4d23a0ba06a512762ec4efe64.svg",
     "static/media/home-shape.png": "/portfolio/static/media/home-shape.2c2a6ab145b18f3ac284.png",
     "index.html": "/portfolio/index.html",
-    "main.6a7f0210.css.map": "/portfolio/static/css/main.6a7f0210.css.map",
-    "main.975aecbd.js.map": "/portfolio/static/js/main.975aecbd.js.map"
+    "main.1b602e7a.css.map": "/portfolio/static/css/main.1b602e7a.css.map",
+    "main.8e603e3f.js.map": "/portfolio/static/js/main.8e603e3f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a7f0210.css",
-    "static/js/main.975aecbd.js"
+    "static/css/main.1b602e7a.css",
+    "static/js/main.8e603e3f.js"
   ]
 }
