@@ -131,16 +131,18 @@ const App = () => {
       <Router>
         <Routes>
           <Route
-            path="/portfolio/"
+            path="/"
+            exact
             element={
               <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}>
                 <Outlet />
               </Layout>
             }
           >
-            <Route path="/portfolio" element={<Home projectList={projectList}/>}></Route>
-            <Route path='/porfolio/project-details/:id' element={<ProjectDetails projectList={projectList}/>}/>
+            <Route exact path="/" element={<Home projectList={projectList}/>}></Route>
+            <Route exact path='/project-details/:id' element={<ProjectDetails projectList={projectList}/>}/>
           </Route>
+
           <Route path="*" element={<h1>404</h1>}></Route>
         </Routes>
       </Router>
