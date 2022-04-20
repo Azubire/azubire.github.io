@@ -1,13 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavLink } from "react-bootstrap";
-import {
-  FaUser,
-  FaHome,
-  FaServicestack,
-  FaInfo,
-  FaForward,
-} from "react-icons/fa";
+import { FaUser, FaHome, FaInfo, FaCode, FaTools } from "react-icons/fa";
 
 const List = [
   {
@@ -18,17 +12,17 @@ const List = [
   {
     name: "Skills",
     to: "skills",
-    icon: <FaUser />,
+    icon: <FaTools />,
   },
   {
     name: "Projects",
     to: "projects",
-    icon: <FaServicestack />,
+    icon: <FaCode />,
   },
   {
     name: "About",
     to: "about",
-    icon: <FaForward />,
+    icon: <FaInfo />,
   },
 ];
 
