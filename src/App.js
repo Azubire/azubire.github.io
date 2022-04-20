@@ -6,106 +6,85 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./components/layout/Layout";
 import Home from "./components/main/Home";
 import ProjectDetails from "./components/main/ProjectDetails";
-import p1 from "./assets/img/project3.png";
-import p2 from "./assets/img/mobile01.png";
-import p3 from "./assets/img/software.png";
-import {
-  FaReact,
-  FaNodeJs,
-  FaPhp,
-  FaLaravel,
-  FaBootstrap,
-} from "react-icons/fa";
+import portfolio from "./assets/img/portfolio.png";
+import lebafrica from "./assets/img/thelebafrica.png";
+import norgence from "./assets/img/norgence-academy.png";
+import { FaReact, FaPhp, FaLaravel } from "react-icons/fa";
+import { DiJqueryLogo, DiMysql, DiJavascript } from "react-icons/di";
 
 const projects = [
   {
     id: 1,
-    name: "E-Commerce",
-    img: p2,
+    name: "The-Leb-Africa",
+    img: lebafrica,
     color: "primary link-light",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda neque eius molestiae blanditiis quas sequi sunt omnis autem officiis fugit, id officia consequatur numquam",
+    desc: "The Leadership, Entrepreneurship and Business (LEB) Roadshow is a programme designed to empower the youth through mentorship, training and career guidance, equipping them with the requisite skills and creating meaningful opportunities to become responsible individuals, living purpose-driven lives. The Leadership, Entrepreneurship and Business Roadshow’ 2022 has an intentional focus on students in the ten technical universities within the country.",
     stack: [
       {
-        icon: <FaReact size={25} className="text-primary" />,
-        name: "React.js",
+        icon: <FaLaravel size={25} className="text-primary" />,
+        name: "laravel",
       },
-      {
-        icon: <FaNodeJs size={25} className="text-primary" />,
-        name: "Node.js",
-      },
+
       {
         icon: <FaPhp size={25} className="text-primary" />,
         name: "PHP",
       },
+
+      {
+        icon: <DiJqueryLogo size={25} className="text-primary" />,
+        name: "jQuery",
+      },
+      {
+        icon: <DiMysql size={25} className="text-primary" />,
+        name: "MySql",
+      },
     ],
-    address: "https://blabla.github.io",
+    github: "",
+    siteUrl: "https://www.thelebafrica.com/",
   },
+
+  {
+    id: 3,
+    name: "Portfolio",
+    img: portfolio,
+    color: "danger link-light",
+    desc: "This is a portfolio website I developed recently. My previous portfolio was built with laravel, this particular one was rebuit from scratch",
+    stack: [
+      {
+        icon: <FaReact size={25} className="text-danger" />,
+        name: "React.js",
+      },
+    ],
+    github: "https://github.com/Azubire/portfolio",
+    siteUrl: "https://azubire.github.io/portfolio/",
+  },
+
   {
     id: 2,
-    name: "CloudBooks",
-    img: p3,
+    name: "Norgence Academy",
+    img: norgence,
     color: "warning link-dark",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda neque eius molestiae blanditiis quas sequi sunt omnis autem officiis fugit, id officia consequatur numquam",
+    desc: "I developed this web app during my period as a intern at Norgence Inc. Norgence Inc runs an academy that offers training in Software Development,Basic IT Proficiency, Networking etc, This wep app was developed purposely to manage the recruitment of students. This application is hosted locally on the company's sever",
     stack: [
       {
         icon: <FaPhp size={25} className="text-warning" />,
         name: "PHP",
       },
       {
-        icon: <FaNodeJs size={25} className="text-warning" />,
-        name: "Node.js",
+        icon: <DiJqueryLogo size={25} className="text-warning" />,
+        name: "jQuery",
+      },
+      {
+        icon: <DiJavascript size={25} className="text-warning" />,
+        name: "javaScript",
+      },
+      {
+        icon: <DiMysql size={25} className="text-warning" />,
+        name: "MySql",
       },
     ],
-    address: "https://blabla.github.io",
-  },
-  {
-    id: 3,
-    name: "CloudBlog",
-    img: p1,
-    color: "danger link-light",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda neque eius molestiae blanditiis quas sequi sunt omnis autem officiis fugit, id officia consequatur numquam",
-    stack: [
-      {
-        icon: <FaReact size={25} className="text-danger" />,
-        name: "React.js",
-      },
-      {
-        icon: <FaPhp size={25} className="text-danger" />,
-        name: "PHP",
-      },
-      {
-        icon: <FaLaravel size={25} className="text-danger" />,
-        name: "Laravel",
-      },
-      {
-        icon: <FaBootstrap size={25} className="text-danger" />,
-        name: "Bootstrap",
-      },
-    ],
-    address: "https://blabla.github.io",
-  },
-
-  {
-    id: 4,
-    name: "E-Lighter",
-    img: p2,
-    color: "secondary link-light",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda neque eius molestiae blanditiis quas sequi sunt omnis autem officiis fugit, id officia consequatur numquam",
-    stack: [
-      {
-        icon: <FaReact size={25} className="text-secondary" />,
-        name: "React.js",
-      },
-      {
-        icon: <FaNodeJs size={25} className="text-secondary" />,
-        name: "Node.js",
-      },
-      {
-        icon: <FaPhp size={25} className="text-secondary" />,
-        name: "PHP",
-      },
-    ],
-    address: "https://blabla.github.io",
+    github: "",
+    siteUrl: "",
   },
 ];
 

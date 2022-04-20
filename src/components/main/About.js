@@ -49,10 +49,10 @@ const About = () => {
               Koforidua Technical University{" "}
             </a>
             at Koforidua, Ghana. I've always loved programming but never took
-            the step to do it until 2019 when I decided to start a career as a
-            developer. I've since been an enthusiast to web development, I am
-            constantly learning and improving on my current skill set, getting
-            my hands on new technologies.
+            the step to do it until 3 years ago when I decided to start a career
+            as a developer. I've since been an enthusiast to web development, I
+            am constantly learning and improving on my current skill set,
+            getting my hands on new technologies.
           </p>
           <p>
             Aside coding, i like to spend my time playing video games, watching

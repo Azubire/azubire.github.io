@@ -1,27 +1,27 @@
-import { useState, useEffect } from 'react';
-import { MDBCol, MDBContainer, MDBRow, MDBBtn} from 'mdb-react-ui-kit';
-import { useParams } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { MDBCol, MDBContainer, MDBRow, MDBBtn } from "mdb-react-ui-kit";
+import { useParams } from "react-router-dom";
 
 const ProjectDetails = ({ projectList }) => {
-    const [state, setstate] = useState({
-        name: '',
-        desc: '',
-        img: '',
-        stack: [{icon:'',name:'',}],
-        address: ''
-    });
-    const url = useParams();
-    const projectId = parseInt(url.id);
-    const {name,desc,img,stack} = state;
-    
-    useEffect(() => {
-        const getId = async (id) => {
-            const project = await projectList.find((item)=>(item.id === id));
-             setstate(()=>(project));
-        }   
-        getId(projectId);
-      },[projectId,projectList]);
-  
+  const [state, setstate] = useState({
+    name: "",
+    desc: "",
+    img: "",
+    stack: [{ icon: "", name: "" }],
+    address: "",
+  });
+  const url = useParams();
+  const projectId = parseInt(url.id);
+  const { name, desc, img, stack, siteUrl, github } = state;
+
+  useEffect(() => {
+    const getId = async (id) => {
+      const project = await projectList.find((item) => item.id === id);
+      setstate(() => project);
+    };
+    getId(projectId);
+  }, [projectId, projectList]);
+
   return (
     <>
       <MDBContainer className="py-5 h-100">
@@ -31,15 +31,37 @@ const ProjectDetails = ({ projectList }) => {
             sm="12"
             className="d-flex flex-column  text-center order-last"
           >
-            <h1 className="display-3 fw-bold">{name}</h1>
-            <p className="fs-6 text-start">{desc}</p>
+            <h1 className="display-4 fw-bold">{name}</h1>
+            <p className="fs-6 text-center">{desc}</p>
             <div className="d-sm-flex my-5 justify-content-center align-content-center">
-              <MDBBtn color="primary mx-2 mt-3" className=" py-2">
-                View Project
-              </MDBBtn>
-              <MDBBtn color="warning mx-2 mt-3" className=" py-2">
-                View On Github
-              </MDBBtn>
+              <a
+                // eslint-disable-next-line no-script-url
+                href={siteUrl ? siteUrl : "javascript:void(0)"}
+                target={siteUrl && "_blank"}
+                rel="noopener noreferrer"
+              >
+                <MDBBtn
+                  color="primary mx-2 mt-3"
+                  disabled={!siteUrl && true}
+                  className=" py-2"
+                >
+                  {siteUrl ? "View Project" : "Demo Not Online"}
+                </MDBBtn>
+              </a>
+              <a
+                // eslint-disable-next-line no-script-url
+                href={github ? github : "javascript:void(0)"}
+                target={github && "_blank"}
+                rel="noopener noreferrer"
+              >
+                <MDBBtn
+                  color="warning mx-2 mt-3"
+                  disabled={!github && true}
+                  className=" py-2"
+                >
+                  {github ? "View On Github" : "Private Repo-Github"}
+                </MDBBtn>
+              </a>
             </div>
           </MDBCol>
           <MDBCol className="hover-zoom">

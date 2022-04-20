@@ -1,17 +1,14 @@
 import { useState } from "react";
-import { Container, Nav, Navbar} from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import SideNav from "./SideNav";
 import NavElement from "./NavElement";
 import { FaBars } from "react-icons/fa";
 import { MDBBtn } from "mdb-react-ui-kit";
 import Logo from "./Logo";
-import {FaMoon} from 'react-icons/fa';
+import { FaMoon } from "react-icons/fa";
 
-
-const NavBar = ({ setIsDarkMode ,isDarkMode}) => {
+const NavBar = ({ setIsDarkMode, isDarkMode }) => {
   const [showSideNav, setShowSideNav] = useState(false);
-  
-  
 
   const handleShow = () => {
     setShowSideNav(true);
@@ -20,17 +17,18 @@ const NavBar = ({ setIsDarkMode ,isDarkMode}) => {
     setShowSideNav(false);
   };
 
-  const handleCheck = (e) =>{
+  const handleCheck = (e) => {
     const checked = e.target.checked;
-    checked ? setIsDarkMode(()=>{
-      localStorage.setItem("isDarkMode", true);
-      return true;
-    }) : setIsDarkMode(()=>{
-      localStorage.setItem("isDarkMode", false);
-      return false;
-    });
-    
-  }
+    checked
+      ? setIsDarkMode(() => {
+          localStorage.setItem("isDarkMode", true);
+          return true;
+        })
+      : setIsDarkMode(() => {
+          localStorage.setItem("isDarkMode", false);
+          return false;
+        });
+  };
 
   return (
     <Container>
@@ -54,9 +52,11 @@ const NavBar = ({ setIsDarkMode ,isDarkMode}) => {
         </div>
         <Nav className="d-none d-sm-flex">
           <NavElement />
-          <MDBBtn color="success" outline className='ms-2'> 
-            Resume
-          </MDBBtn>
+          <a href="mailto:azubirepeter@gmail.com">
+            <MDBBtn color="success" outline className="ms-2">
+              Hire Me
+            </MDBBtn>
+          </a>
         </Nav>
         <FaBars onClick={handleShow} className="pointer d-block d-sm-none" />
         <SideNav
