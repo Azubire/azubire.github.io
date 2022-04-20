@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1b602e7a.css",
-    "main.js": "/portfolio/static/js/main.18518d34.js",
+    "main.js": "/portfolio/static/js/main.3889a6c2.js",
+    "static/media/thelebafrica.png": "/portfolio/static/media/thelebafrica.4dabc9fba4718ea43f0d.png",
     "static/media/azubire.jpg": "/portfolio/static/media/azubire.5a51db2bb6ff688e58eb.jpg",
-    "static/media/mobile01.png": "/portfolio/static/media/mobile01.90e9634ef49df165140b.png",
-    "static/media/software.png": "/portfolio/static/media/software.f4b8f0f92ae42e8c6f01.png",
-    "static/media/laptop.png": "/portfolio/static/media/laptop.7cc131a636d3eeb02200.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.26706ad708e5c8e84492.png",
     "static/media/bg2.png": "/portfolio/static/media/bg2.feb4c62cdacb4141ef6a.png",
+    "static/media/laptop.png": "/portfolio/static/media/laptop.460b2e7fae227ceb0910.png",
     "static/media/about.png": "/portfolio/static/media/about.192efbf9dc977ebb61db.png",
-    "static/media/project3.png": "/portfolio/static/media/project3.5520873047d55986d023.png",
+    "static/media/norgence-academy.png": "/portfolio/static/media/norgence-academy.169137f92c5a6c9ca1ee.png",
     "static/media/amico.svg": "/portfolio/static/media/amico.0e75d69669bbd635f59e4b1a7b87598f.svg",
     "static/media/home-shape.png": "/portfolio/static/media/home-shape.2c2a6ab145b18f3ac284.png",
     "index.html": "/portfolio/index.html",
     "main.1b602e7a.css.map": "/portfolio/static/css/main.1b602e7a.css.map",
-    "main.18518d34.js.map": "/portfolio/static/js/main.18518d34.js.map"
+    "main.3889a6c2.js.map": "/portfolio/static/js/main.3889a6c2.js.map"
   },
   "entrypoints": [
     "static/css/main.1b602e7a.css",
-    "static/js/main.18518d34.js"
+    "static/js/main.3889a6c2.js"
   ]
 }
