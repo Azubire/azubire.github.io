@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavLink } from "react-bootstrap";
-import { FaUser, FaHome, FaInfo, FaCode, FaTools } from "react-icons/fa";
+import { FaHome, FaInfo, FaCode, FaTools } from "react-icons/fa";
 
 const List = [
   {

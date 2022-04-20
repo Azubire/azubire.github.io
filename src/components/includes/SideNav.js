@@ -5,7 +5,6 @@ import {
   OffcanvasTitle,
   Button,
 } from "react-bootstrap";
-import { useState } from "react";
 import NavElement from "./NavElement";
 import { FaTimes } from "react-icons/fa";
 import Logo from "./Logo";
