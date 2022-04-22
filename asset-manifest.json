@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1b602e7a.css",
-    "main.js": "/portfolio/static/js/main.3889a6c2.js",
+    "main.js": "/portfolio/static/js/main.673a34ad.js",
     "static/media/thelebafrica.png": "/portfolio/static/media/thelebafrica.4dabc9fba4718ea43f0d.png",
     "static/media/azubire.jpg": "/portfolio/static/media/azubire.5a51db2bb6ff688e58eb.jpg",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.26706ad708e5c8e84492.png",
@@ -13,10 +13,10 @@
     "static/media/home-shape.png": "/portfolio/static/media/home-shape.2c2a6ab145b18f3ac284.png",
     "index.html": "/portfolio/index.html",
     "main.1b602e7a.css.map": "/portfolio/static/css/main.1b602e7a.css.map",
-    "main.3889a6c2.js.map": "/portfolio/static/js/main.3889a6c2.js.map"
+    "main.673a34ad.js.map": "/portfolio/static/js/main.673a34ad.js.map"
   },
   "entrypoints": [
     "static/css/main.1b602e7a.css",
-    "static/js/main.3889a6c2.js"
+    "static/js/main.673a34ad.js"
   ]
 }
