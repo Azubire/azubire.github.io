@@ -24,8 +24,8 @@ const projects = [
       {
         icon: (
           <svg
-            id="Layer_1"
-            data-name="Layer 1"
+            id="next"
+            data-name="nxt"
             height={30}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 506.68 306.34"
@@ -143,19 +143,13 @@ const App = () => {
             </Layout>
           }
         >
+          <Route exact path="/" element={<Home projectList={projectList} />} />
           <Route
-            exact
-            path="/"
-            element={<Home projectList={projectList} />}
-          ></Route>
-          <Route
-            exact
             path="/project-details/:id"
             element={<ProjectDetails projectList={projectList} />}
           />
+          <Route path="*" element={<h1>404</h1>} />
         </Route>
-
-        <Route path="*" element={<h1>404</h1>}></Route>
       </Routes>
     </Router>
   );

@@ -1,7 +1,3 @@
-html {
-  /* scroll-behavior: smooth; */
-}
-
 .bg-vector {
   position: absolute;
   width: 50%;
@@ -37,7 +33,6 @@ html {
 
 .pointer:hover {
   transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
   color: crimson;
 }
 
@@ -80,7 +75,6 @@ html {
 }
 .hero-img {
   transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
 }
 
 .img-circle {

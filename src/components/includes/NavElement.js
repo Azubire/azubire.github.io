@@ -67,7 +67,7 @@ const NavElement = ({ className, showIcon, hide, show }) => {
           return (
             <NavLink
               key={index}
-              href={`#${item.to}`}
+              href={`${item.to}`}
               className={`li ${show && "mb-4"} ${className}`}
               onClick={(e) => {
                 e.preventDefault();

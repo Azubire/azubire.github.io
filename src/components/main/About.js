@@ -14,7 +14,6 @@ const About = () => {
   const darkMode = localStorage.getItem("isDarkMode");
 
   useEffect(() => {
-    console.log(darkMode);
     setIsDarkMode((prev) => {
       if (darkMode === "true") return true;
       if (darkMode === "false") return false;
