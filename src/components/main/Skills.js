@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import bg from "../../assets/img/bg2.png";
+import rn from "../../assets/img/reactnative.png";
 
 import {
   FaJs,
@@ -25,6 +26,7 @@ import {
   SiAdobexd,
   SiMysql,
   SiVisualstudiocode,
+  SiFigma,
 } from "react-icons/si";
 
 const mySkills = [
@@ -72,6 +74,10 @@ const mySkills = [
   {
     name: "React",
     i: <FaReact size={50} className="text-primary" />,
+  },
+  {
+    name: "React native",
+    i: <Image src={rn} height="50" />,
   },
   {
     name: "Next.js",
@@ -127,6 +133,10 @@ const myTools = [
   {
     name: "AdobeXD",
     i: <SiAdobexd size={50} className="text-primary" />,
+  },
+  {
+    name: "Figma",
+    i: <SiFigma size={50} className="text-primary" />,
   },
   {
     name: "Npm",

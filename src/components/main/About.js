@@ -45,8 +45,7 @@ const About = () => {
               target={"_blank"}
               className="text-decoration-none"
             >
-              {" "}
-              Koforidua Technical University{" "}
+              Koforidua Technical University
             </a>
             at Koforidua, Ghana. I've always loved programming but never took
             the step to do it until 3 years ago when I decided to start a career
@@ -61,15 +60,30 @@ const About = () => {
           <p className="d-inline">
             Lets connect : <FaHandPointRight size={20} />
           </p>
-          <Link to="#" className="mx-3">
+          <a
+            className="mx-3"
+            href="https://github.com/Azubire"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaGithub size={25} />
-          </Link>
-          <Link to="#" className="mx-3">
+          </a>
+          <a
+            className="mx-3"
+            href="https://www.linkedin.com/in/peter-azubire"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaLinkedin size={25} />
-          </Link>
-          <Link to="#" className="mx-3">
+          </a>
+          <a
+            className="mx-3"
+            href="https://twitter.com/p_azubire"
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaTwitter size={25} />
-          </Link>
+          </a>
         </Col>
       </Row>
     </Container>

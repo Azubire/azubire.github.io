@@ -45,7 +45,7 @@ const ProjectDetails = ({ projectList }) => {
                   disabled={!siteUrl && true}
                   className=" py-2"
                 >
-                  {siteUrl ? "View Project" : "Demo Not Online"}
+                  {siteUrl ? "Visit website" : "Demo Not Online"}
                 </MDBBtn>
               </a>
               <a
@@ -59,7 +59,7 @@ const ProjectDetails = ({ projectList }) => {
                   disabled={!github && true}
                   className=" py-2"
                 >
-                  {github ? "View On Github" : "Private Repo-Github"}
+                  {github ? "View On Github" : "Private Github-Repo"}
                 </MDBBtn>
               </a>
             </div>
