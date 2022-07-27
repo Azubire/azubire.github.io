@@ -19,7 +19,7 @@ const projects = [
     name: "Pushlink Consult Ltd",
     img: pushlink,
     color: "primary link-light",
-    desc: "I rebuilt this website from scratch that was initialy built with wordpress Consult Ltd Push – Link Consult Limited exist to provide partners with a better and easy approach to life in their pursuit for maximum satisfaction to their needs and also maximize profit in all aspect of business. ",
+    desc: "I rebuilt this website from scratch that was initialy built with wordpress. Push – Link Consult Limited exist to provide partners with a better and easy approach to life in their pursuit for maximum satisfaction to their needs and also maximize profit in all aspect of business. ",
     stack: [
       {
         icon: (
@@ -48,7 +48,7 @@ const projects = [
     desc: "The Leadership, Entrepreneurship and Business (LEB) Roadshow is a programme designed to empower the youth through mentorship, training and career guidance, equipping them with the requisite skills and creating meaningful opportunities to become responsible individuals, living purpose-driven lives. The Leadership, Entrepreneurship and Business Roadshow’ 2022 has an intentional focus on students in the ten technical universities within the country.",
     stack: [
       {
-        icon: <FaLaravel size={25} className="success-primary" />,
+        icon: <FaLaravel size={25} className="text-primary" />,
         name: "laravel",
       },
 

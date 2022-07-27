@@ -36,32 +36,37 @@ const ProjectDetails = ({ projectList }) => {
           <h1 className="display-4 fw-bold">{name}</h1>
           <p className="fs-6 text-center">{desc}</p>
           <div className="d-sm-flex my-5 justify-content-center align-content-center">
-            <a
-              href={siteUrl ? siteUrl : ""}
-              target={siteUrl && "_blank"}
-              rel="noopener noreferrer"
-            >
+            {siteUrl ? (
+              <a href={siteUrl} target={"_blank"} rel="noopener noreferrer">
+                <MDBBtn color="primary mx-2 mt-3" className=" py-2">
+                  Visit website
+                </MDBBtn>
+              </a>
+            ) : (
               <MDBBtn
                 color="primary mx-2 mt-3"
-                disabled={!siteUrl && true}
+                disabled={true}
                 className=" py-2"
               >
-                {siteUrl ? "Visit website" : "Demo Not Online"}
+                Demo Not Online
               </MDBBtn>
-            </a>
-            <a
-              href={github ? github : ""}
-              target={github && "_blank"}
-              rel="noopener noreferrer"
-            >
+            )}
+
+            {github ? (
+              <a href={github} target={"_blank"} rel="noopener noreferrer">
+                <MDBBtn color="success mx-2 mt-3" className=" py-2">
+                  View on github
+                </MDBBtn>
+              </a>
+            ) : (
               <MDBBtn
-                color="warning mx-2 mt-3"
-                disabled={!github && true}
+                color="danger mx-2 mt-3"
+                disabled={true}
                 className=" py-2"
               >
-                {github ? "View On Github" : "Private Github-Repo"}
+                Private Github Repo
               </MDBBtn>
-            </a>
+            )}
           </div>
         </MDBCol>
         <MDBCol className="hover-zoom">
