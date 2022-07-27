@@ -45,7 +45,7 @@ const NavElement = ({ className, showIcon, hide, show }) => {
             <Link
               key={index}
               to={`/`}
-              className={`li nav-link ${className}`}
+              className={`li nav-link ${show && "mb-4"} ${className}`}
               onClick={(e) => {
                 setTimeout(() => {
                   let page = document.getElementById(item.to);
@@ -59,7 +59,7 @@ const NavElement = ({ className, showIcon, hide, show }) => {
                 }, 0);
               }}
             >
-              <i className="me-2">{showIcon && item.icon}</i>
+              <i className="me-3 ">{showIcon && item.icon}</i>
               {item.name}
             </Link>
           );
@@ -68,7 +68,7 @@ const NavElement = ({ className, showIcon, hide, show }) => {
             <NavLink
               key={index}
               href={`#${item.to}`}
-              className={`li ${className}`}
+              className={`li ${show && "mb-4"} ${className}`}
               onClick={(e) => {
                 e.preventDefault();
                 let page = document.getElementById(item.to);
@@ -81,8 +81,10 @@ const NavElement = ({ className, showIcon, hide, show }) => {
                 show && hide();
               }}
             >
-              <i className="me-2">{showIcon && item.icon}</i>
-              {item.name}
+              <div className="d-flex align-items-center">
+                <i className="me-3">{showIcon && item.icon}</i>
+                <p className="p-0 m-0">{item.name}</p>
+              </div>
             </NavLink>
           );
         }

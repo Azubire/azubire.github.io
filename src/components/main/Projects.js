@@ -19,6 +19,7 @@ const Projects = ({ projects }) => {
                   </CardHeader>
                   <CardImg
                     src={img}
+                    width="100%"
                     alt={name}
                     className="img-project py-1"
                   ></CardImg>

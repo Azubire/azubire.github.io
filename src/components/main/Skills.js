@@ -27,6 +27,7 @@ import {
   SiMysql,
   SiVisualstudiocode,
   SiFigma,
+  SiExpress,
 } from "react-icons/si";
 
 const mySkills = [
@@ -76,7 +77,7 @@ const mySkills = [
     i: <FaReact size={50} className="text-primary" />,
   },
   {
-    name: "React native",
+    name: "React Native",
     i: <Image src={rn} height="50" />,
   },
   {
@@ -106,6 +107,10 @@ const mySkills = [
   {
     name: "Node.js",
     i: <FaNodeJs size={50} className="text-primary" />,
+  },
+  {
+    name: "Express.js",
+    i: <SiExpress size={50} className="text-primary" />,
   },
   {
     name: "MySql",

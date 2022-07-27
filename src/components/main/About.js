@@ -1,5 +1,6 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import {
   FaGithub,
   FaHandPointRight,
@@ -9,6 +10,17 @@ import {
 import profile from "../../assets/img/azubire.jpg";
 
 const About = () => {
+  const [isDarkMode, setIsDarkMode] = useState(null);
+  const darkMode = localStorage.getItem("isDarkMode");
+
+  useEffect(() => {
+    console.log(darkMode);
+    setIsDarkMode((prev) => {
+      if (darkMode === "true") return true;
+      if (darkMode === "false") return false;
+    });
+  }, [darkMode]);
+
   return (
     <Container>
       <Row>
@@ -22,12 +34,16 @@ const About = () => {
           <Card className="border-0 shadow-none w-100 bg-d">
             <img
               src={profile}
-              alt=""
+              alt="profile"
               className="card-img border-bottom border-primary border-3"
             />
-            <Card.Body>
-              <Card.Text className="text-dark text-center">
-                I'm a Google Enthusiast!
+            <Card.Body className={!isDarkMode && "bg-dark"}>
+              <Card.Text
+                className={`${
+                  isDarkMode ? "text-dark" : "text-white"
+                } text-center text-uppercase`}
+              >
+                I do it when I say yes!
               </Card.Text>
             </Card.Body>
           </Card>
@@ -38,14 +54,14 @@ const About = () => {
             Hey <span className="span-texts">everyone! &#x1F44B;</span>
             <br />
             I am Azubire Peter from Bolgatanga, Ghana.
-            <br />I am currently a 3rd year Computer Science student of
+            <br />I am currently a 3rd year Computer Science student of{" "}
             <a
               href="https://ktu.edu.gh"
               rel="noreferrer"
               target={"_blank"}
               className="text-decoration-none"
             >
-              Koforidua Technical University
+              Koforidua Technical University{" "}
             </a>
             at Koforidua, Ghana. I've always loved programming but never took
             the step to do it until 3 years ago when I decided to start a career
@@ -58,7 +74,7 @@ const About = () => {
             movies and football.
           </p>
           <p className="d-inline">
-            Lets connect : <FaHandPointRight size={20} />
+            Lets connect : <FaHandPointRight className="danger" size={20} />
           </p>
           <a
             className="mx-3"

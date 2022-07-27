@@ -5,7 +5,7 @@ const Footer = (params) => {
     <Container fluid className="text-center border-top">
       <Row>
         <Col className="py-2">
-          <span>Made with ❤️ by Peter @2022</span>
+          <span>Made with ❤️ by Peter @{new Date().getFullYear()}</span>
         </Col>
       </Row>
     </Container>

@@ -92,11 +92,11 @@ html {
   border: 1px solid crimson;
 }
 
-.img-project {
+/* .img-project {
   height: 250px;
   object-fit: cover;
   padding: 50px;
-}
+} */
 .bg-vector,
 .vector {
   opacity: 0.2;
