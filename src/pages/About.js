@@ -7,7 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
-import profile from "../../assets/img/azubire.jpg";
+import profile from "../assets/img/azubire.jpg";
 
 const About = () => {
   const [isDarkMode, setIsDarkMode] = useState(null);

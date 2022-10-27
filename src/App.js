@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { HashRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import "./assets/css/App.css";
-import "mdb-react-ui-kit/dist/css/mdb.min.css";
+// import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Layout from "./components/layout/Layout";
-import Home from "./components/main/Home";
-import ProjectDetails from "./components/main/ProjectDetails";
+import Layout from "./layout/Layout";
+import Home from "./pages/Home";
+import ProjectDetails from "./pages/ProjectDetails";
 import portfolio from "./assets/img/portfolio.png";
 import lebafrica from "./assets/img/thelebafrica.png";
 import norgence from "./assets/img/norgence-academy.png";

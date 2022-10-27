@@ -1,11 +1,11 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Hero from "./Hero";
-import svg1 from "../../assets/img/laptop.png";
-import svg2 from "../../assets/img/amico.svg";
+import svg1 from "../assets/img/laptop.png";
+import svg2 from "../assets/img/amico.svg";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import About from "./About";
-import starSvg from "../../assets/img/home-shape.png";
+import starSvg from "../assets/img/home-shape.png";
 
 const Home = ({ projectList }) => {
   return (

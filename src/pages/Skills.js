@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import bg from "../../assets/img/bg2.png";
-import rn from "../../assets/img/reactnative.png";
+import bg from "../assets/img/bg2.png";
+import rn from "../assets/img/reactnative.png";
 
 import {
   FaJs,

@@ -1,5 +1,5 @@
 import { Col, Row, Container } from "react-bootstrap";
-import social from "../../assets/img/about.png";
+import social from "../assets/img/about.png";
 
 const Hero = (params) => {
   return (
