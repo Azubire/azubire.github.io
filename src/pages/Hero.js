@@ -9,16 +9,17 @@ const Hero = (params) => {
           <Col className=" col-12 col-md-7 pt-5 d-flex justify-content-center align-items-center">
             <h2 className="hero-text text-sm-start py-sm-0 py-3 text-center ">
               Hello{" "}
-              <span className="span-text text-primary">there! &#x1F44B;</span>
+              <span className="span-text text-info">there! &#x1F44B;</span>
               <br />
-              I'm <span className="span-name">Peter Azubire,</span> a
-              <span className="span-text text-warning"> Software </span>
-              Developer, a tech enthusiast, curious about new{" "}
-              <span className="span-text text-warning">technologies</span>
+              I'm <span className="span-name">Peter Azubire,</span> an
+              experienced <br />
+              <span className="span-text text-info"> Full Stack </span>
+              Developer. A tech enthusiast curious about new{" "}
+              <span className="span-text text-info">technologies</span>
               <br />
               <br />
-              <span className="span-text-greeth text-success">
-                Great to meet you! &#x1F60E;
+              <span className="span-text-greeth text-warning">
+                Glad to meet you! &#x1F60E;
               </span>
             </h2>
           </Col>

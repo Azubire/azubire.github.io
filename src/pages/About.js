@@ -50,27 +50,18 @@ const About = () => {
         <Col className="col-md-8 col-12 pt-5 pt-md-0">
           <h1>Bio</h1>
           <p>
-            Hey <span className="span-texts">everyone! &#x1F44B;</span>
-            <br />
-            I am Azubire Peter from Bolgatanga, Ghana.
-            <br />I am currently a 3rd year Computer Science student of{" "}
-            <a
-              href="https://ktu.edu.gh"
-              rel="noreferrer"
-              target={"_blank"}
-              className="text-decoration-none"
-            >
-              Koforidua Technical University{" "}
-            </a>
-            at Koforidua, Ghana. I've always loved programming but never took
-            the step to do it until 3 years ago when I decided to start a career
-            as a developer. I've since been an enthusiast to web development, I
-            am constantly learning and improving on my current skill set,
-            getting my hands on new technologies.
+            Hey <span className="span-texts">everyone ! &#x1F44B;</span>
+            <br /> I am Azubire Peter. A Full Stack Developer Living in Bolga,
+            Ghana. I've always loved programming but never took a step to persue
+            it until {new Date().getFullYear() - 2019} years ago, I decided to
+            start a career as a software developer. I've since been an
+            enthusiast to Software Development | Web Development. I am
+            constantly learning and improving on my current skill set, getting
+            my hands on new and evolving trends and technologies.
           </p>
           <p>
-            Aside coding, i like to spend my time playing video games, watching
-            movies and football.
+            Aside writing coding, I love to spend my time playing video games,
+            watching movies, football and listening to good music.
           </p>
           <p className="d-inline">
             Lets connect : <FaHandPointRight className="danger" size={20} />

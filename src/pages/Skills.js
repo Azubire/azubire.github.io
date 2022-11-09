@@ -18,6 +18,7 @@ import {
   FaJava,
   FaCss3Alt,
   FaSass,
+  FaDocker,
 } from "react-icons/fa";
 
 import { DiJqueryLogo } from "react-icons/di";
@@ -28,18 +29,15 @@ import {
   SiVisualstudiocode,
   SiFigma,
   SiExpress,
+  SiKotlin,
+  SiTypescript,
 } from "react-icons/si";
 
 const mySkills = [
   {
-    name: "java",
-    i: <FaJava size={50} className="text-primary" />,
+    name: "Kotlin",
+    i: <SiKotlin size={50} className="text-primary" />,
   },
-  {
-    name: "javScript",
-    i: <FaJs size={50} className="text-primary" />,
-  },
-
   {
     name: "c++",
     i: (
@@ -57,16 +55,29 @@ const mySkills = [
     ),
   },
   {
+    name: "javaScript",
+    i: <FaJs size={50} className="text-primary" />,
+  },
+  {
+    name: "TypeScript",
+    i: <SiTypescript size={50} className="text-primary" />,
+  },
+
+  {
     name: "PHP",
     i: <FaPhp size={50} className="text-primary" />,
   },
   {
-    name: "Html",
+    name: "Html5",
     i: <FaHtml5 size={50} className="text-primary" />,
   },
   {
-    name: "CSS",
+    name: "CSS3",
     i: <FaCss3Alt size={50} className="text-primary" />,
+  },
+  {
+    name: "Sass",
+    i: <FaSass size={50} className="text-primary" />,
   },
   {
     name: "laravel",
@@ -78,7 +89,7 @@ const mySkills = [
   },
   {
     name: "React Native",
-    i: <Image src={rn} height="50" />,
+    i: <FaReact size={50} className="text-primary" />,
   },
   {
     name: "Next.js",
@@ -148,12 +159,8 @@ const myTools = [
     i: <FaNpm size={50} className="text-primary" />,
   },
   {
-    name: "Node",
-    i: <FaNode size={50} className="text-primary" />,
-  },
-  {
-    name: "Saas",
-    i: <FaSass size={50} className="text-primary" />,
+    name: "Docker",
+    i: <FaDocker size={50} className="text-primary" />,
   },
 ];
 const Skills = () => {

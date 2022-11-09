@@ -31,8 +31,9 @@ const Home = ({ projectList }) => {
                     Who am I?
                   </h1>
                   <p>
-                    I am a self-motivated developer that is focused on creating
-                    high-quality solutions to problems.
+                    I am a self-motivated developer that is focused on building
+                    working solutions. I am a fast learner and constantly
+                    learning new technologies in the industry
                   </p>
                   <br />
                   <blockquote className="text-center fst-italic">
@@ -49,9 +50,10 @@ const Home = ({ projectList }) => {
                     What I do?
                   </h1>
                   <p>
-                    With 2+ years of Experience as a developer, I build
-                    interactive, maintainable, predictable,scalable, and high
-                    performing web applications with a wide range of tools.
+                    With {new Date().getFullYear() - 2020}+ years of Experience
+                    as a developer, I build interactive, maintainable,
+                    predictable,scalable, and high performing web applications
+                    with a wide range of tools.
                   </p>
                   <br />
                   <blockquote className="text-center">

@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { MDBBtn } from "mdb-react-ui-kit";
 import Logo from "./Logo";
 import { FaMoon } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const NavBar = ({ setIsDarkMode, isDarkMode }) => {
   const [showSideNav, setShowSideNav] = useState(false);
@@ -52,11 +53,11 @@ const NavBar = ({ setIsDarkMode, isDarkMode }) => {
         </div>
         <Nav className="d-none d-sm-flex">
           <NavElement />
-          <a href="mailto:azubirepeter@gmail.com">
+          <Link target={"_blank"} to="/my-cv">
             <MDBBtn color="success" outline className="ms-2">
               Hire Me
             </MDBBtn>
-          </a>
+          </Link>
         </Nav>
         <FaBars onClick={handleShow} className="pointer d-block d-sm-none" />
         <SideNav
