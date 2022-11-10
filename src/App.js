@@ -15,15 +15,15 @@ import { DiJqueryLogo, DiMysql, DiJavascript } from "react-icons/di";
 import Cv from "./pages/Cv";
 import RN from "./assets/img/reactnative.png";
 import { Image } from "react-bootstrap";
-import { SiExpo, SiExpress } from "react-icons/si";
+import { SiExpo, SiExpress, SiRedux, SiTypescript } from "react-icons/si";
 
 const projects = [
   {
     id: 5,
     name: "Agro Plus",
     img: pushlink,
-    color: "primary link-light",
-    desc: "I rebuilt this website from scratch that was initialy built with wordpress. Push – Link Consult Limited exist to provide partners with a better and easy approach to life in their pursuit for maximum satisfaction to their needs and also maximize profit in all aspect of business. ",
+    color: "danger link-light",
+    desc: "I was the sole designer, developer of this project, a mobile application to help rural farmers get ready market for their produce conveniently. The app is built with React Native, TypeScript,Redux Toolkit,Native Base. The app is powered by a backend api running on nodejs, sequelize, MySql database. It also comes with an administrative dashboard to monitor,track and update the app's content built with NextJs, TypeScript, Chakra Ui",
     stack: [
       {
         icon: <Image src={RN} height={25} />,
@@ -36,6 +36,26 @@ const projects = [
       {
         icon: <SiExpress size={25} />,
         name: "Express Js",
+      },
+      {
+        icon: <SiExpress size={25} />,
+        name: "Express Js",
+      },
+      {
+        icon: <SiExpress size={25} />,
+        name: "Express Js",
+      },
+      {
+        icon: <SiExpress size={25} />,
+        name: "Express Js",
+      },
+      {
+        icon: <SiTypescript size={25} />,
+        name: "TypeScript",
+      },
+      {
+        icon: <SiRedux size={25} />,
+        name: "Redux",
       },
       {
         icon: <Image src={RN} height={25} />,
@@ -58,18 +78,22 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "https://www.pushlinkconsult.com",
+    siteUrl: "",
   },
   {
     id: 6,
     name: "Lets Recycle",
     img: pushlink,
-    color: "primary link-light",
-    desc: "I rebuilt this website from scratch that was initialy built with wordpress. Push – Link Consult Limited exist to provide partners with a better and easy approach to life in their pursuit for maximum satisfaction to their needs and also maximize profit in all aspect of business. ",
+    color: "info link-light",
+    desc: "This is a cross platform mobile application that I built as a freelancer for a group of students that they used as their final year project. The application's front end was built with React Native, Typescript, Expo, Redux, React Native Paper. A RESTApi backend built with Express Js, JWT. An admin dashboard built with NextJs,TypeScript Material Ui",
     stack: [
       {
         icon: <Image src={RN} height={25} />,
         name: "Next Js",
+      },
+      {
+        icon: <SiTypescript size={25} />,
+        name: "TypeScript",
       },
       {
         icon: <SiExpress size={25} />,
@@ -78,6 +102,10 @@ const projects = [
       {
         icon: <SiExpo size={25} />,
         name: "Expo",
+      },
+      {
+        icon: <SiRedux size={25} />,
+        name: "Redux",
       },
       {
         icon: <Image src={RN} height={25} />,
@@ -100,7 +128,7 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "https://www.pushlinkconsult.com",
+    siteUrl: "",
   },
   {
     id: 1,
