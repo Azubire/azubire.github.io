@@ -41,7 +41,7 @@
 
 .pointer:hover {
   transform: rotate(180deg);
-  color: crimson;
+  /* color: crimson; */
 }
 
 .hero-text {

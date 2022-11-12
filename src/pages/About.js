@@ -64,7 +64,7 @@ const About = () => {
             watching movies, football and listening to good music.
           </p>
           <p className="d-inline">
-            Lets connect : <FaHandPointRight className="danger" size={20} />
+            Lets connect : <FaHandPointRight color="danger" size={20} />
           </p>
           <a
             className="mx-3"

@@ -15,35 +15,36 @@ import { DiJqueryLogo, DiMysql, DiJavascript } from "react-icons/di";
 import Cv from "./pages/Cv";
 import RN from "./assets/img/reactnative.png";
 import { Image } from "react-bootstrap";
-import { SiExpo, SiExpress, SiRedux, SiTypescript } from "react-icons/si";
+import {
+  SiExpo,
+  SiExpress,
+  SiReact,
+  SiRedux,
+  SiTypescript,
+} from "react-icons/si";
+import NB from "./assets/img/nativebase.png";
+import CU from "./assets/img/chakraui.png";
+import MUI from "./assets/img/mui.png";
+import RNP from "./assets/img/rnp.jpg";
+import NM from "./assets/img/nm.png";
+import FM from "./assets/img/fm.png";
 
 const projects = [
   {
     id: 5,
     name: "Agro Plus",
-    img: pushlink,
+    coverImg: lebafrica,
+    images: [pushlink, norgence, pushlink],
     color: "danger link-light",
     desc: "I was the sole designer, developer of this project, a mobile application to help rural farmers get ready market for their produce conveniently. The app is built with React Native, TypeScript,Redux Toolkit,Native Base. The app is powered by a backend api running on nodejs, sequelize, MySql database. It also comes with an administrative dashboard to monitor,track and update the app's content built with NextJs, TypeScript, Chakra Ui",
     stack: [
       {
-        icon: <Image src={RN} height={25} />,
+        icon: <SiReact size={25} />,
         name: "React Native",
       },
       {
         icon: <SiExpo size={25} />,
         name: "Expo",
-      },
-      {
-        icon: <SiExpress size={25} />,
-        name: "Express Js",
-      },
-      {
-        icon: <SiExpress size={25} />,
-        name: "Express Js",
-      },
-      {
-        icon: <SiExpress size={25} />,
-        name: "Express Js",
       },
       {
         icon: <SiExpress size={25} />,
@@ -58,7 +59,7 @@ const projects = [
         name: "Redux",
       },
       {
-        icon: <Image src={RN} height={25} />,
+        icon: <Image src={NB} height={25} />,
         name: "Native Base",
       },
       {
@@ -76,6 +77,10 @@ const projects = [
         ),
         name: "NextJs",
       },
+      {
+        icon: <Image src={CU} height={25} />,
+        name: "Chakra Ui",
+      },
     ],
     github: "",
     siteUrl: "",
@@ -83,13 +88,14 @@ const projects = [
   {
     id: 6,
     name: "Lets Recycle",
-    img: pushlink,
+    coverImg: pushlink,
+    images: [pushlink, lebafrica, norgence],
     color: "info link-light",
     desc: "This is a cross platform mobile application that I built as a freelancer for a group of students that they used as their final year project. The application's front end was built with React Native, Typescript, Expo, Redux, React Native Paper. A RESTApi backend built with Express Js, JWT. An admin dashboard built with NextJs,TypeScript Material Ui",
     stack: [
       {
-        icon: <Image src={RN} height={25} />,
-        name: "Next Js",
+        icon: <SiReact size={25} />,
+        name: "React Native",
       },
       {
         icon: <SiTypescript size={25} />,
@@ -108,7 +114,7 @@ const projects = [
         name: "Redux",
       },
       {
-        icon: <Image src={RN} height={25} />,
+        icon: <Image src={RNP} height={25} />,
         name: "React Native Paper",
       },
       {
@@ -126,6 +132,10 @@ const projects = [
         ),
         name: "NextJs",
       },
+      {
+        icon: <Image src={MUI} height={25} />,
+        name: "Material Ui",
+      },
     ],
     github: "",
     siteUrl: "",
@@ -133,7 +143,8 @@ const projects = [
   {
     id: 1,
     name: "Pushlink Consult Ltd",
-    img: pushlink,
+    coverImg: pushlink,
+    images: [pushlink, pushlink, pushlink],
     color: "primary link-light",
     desc: "I rebuilt this website from scratch that was initialy built with wordpress. Push – Link Consult Limited exist to provide partners with a better and easy approach to life in their pursuit for maximum satisfaction to their needs and also maximize profit in all aspect of business. ",
     stack: [
@@ -152,6 +163,18 @@ const projects = [
         ),
         name: "Next Js",
       },
+      {
+        icon: <Image src={MUI} height={25} />,
+        name: "Material Ui",
+      },
+      {
+        icon: <Image src={NM} height={25} />,
+        name: "Node Mailer",
+      },
+      {
+        icon: <Image src={FM} height={25} />,
+        name: "Framer Motion",
+      },
     ],
     github: "",
     siteUrl: "https://www.pushlinkconsult.com",
@@ -159,7 +182,8 @@ const projects = [
   {
     id: 2,
     name: "The-Leb-Africa",
-    img: lebafrica,
+    coverImg: lebafrica,
+    images: [lebafrica, lebafrica, lebafrica],
     color: "success link-light",
     desc: "The Leadership, Entrepreneurship and Business (LEB) Roadshow is a programme designed to empower the youth through mentorship, training and career guidance, equipping them with the requisite skills and creating meaningful opportunities to become responsible individuals, living purpose-driven lives. The Leadership, Entrepreneurship and Business Roadshow’ 2022 has an intentional focus on students in the ten technical universities within the country.",
     stack: [
@@ -189,7 +213,8 @@ const projects = [
   {
     id: 3,
     name: "Portfolio",
-    img: portfolio,
+    coverImg: portfolio,
+    images: [portfolio, portfolio, portfolio],
     color: "warning link-light",
     desc: "This is a portfolio website for myself I developed to showcase some of my work. I had a previous one that was built with laravel but decided to rebuilt it using react after a week of learning react js",
     stack: [
@@ -205,7 +230,8 @@ const projects = [
   {
     id: 4,
     name: "Norgence Academy",
-    img: norgence,
+    coverImg: norgence,
+    images: [norgence, norgence, norgence],
     color: "info link-dark",
     desc: "I developed this web app during my period as a intern at Norgence Inc. Norgence Inc runs an academy that offers training in Software Development, Basic IT Proficiency, Networking etc, This web app was developed purposely to manage the recruitment of new students to the academy. This application is hosted locally on the company's sever",
     stack: [

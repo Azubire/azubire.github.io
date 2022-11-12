@@ -30,13 +30,6 @@ const NavElement = ({ className, showIcon, hide, show }) => {
   const [navList] = useState(List);
   const loc = useLocation();
 
-  // if (loc.pathname.match("/project-details/")) {
-  //   console.log(loc);
-  // } else {
-  //   console.log("No match");
-  // }
-  // loc.pathname.match("/project-details/") ? return(console.log('ssss');) : return();
-
   return (
     <>
       {navList.map((item, index) => {

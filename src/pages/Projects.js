@@ -1,13 +1,5 @@
 import { Link } from "react-router-dom";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  CardImg,
-  Button,
-  Stack,
-} from "react-bootstrap";
+import { Container, Card, CardImg, Button, Stack } from "react-bootstrap";
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
 // Import Swiper React components
@@ -25,7 +17,7 @@ import { FaChevronRight, FaEye } from "react-icons/fa";
 
 const Projects = ({ projects }) => {
   return (
-    <Container fluid>
+    <Container>
       {/* <Row> */}
       <h1 className="text-center py-5">Recent Projects</h1>
       <Swiper
@@ -43,23 +35,23 @@ const Projects = ({ projects }) => {
         preventClicks
       >
         {projects.map((project) => {
-          const { id, name, color, img, stack } = project;
+          const { id, name, coverImg } = project;
 
           return (
             <SwiperSlide>
               {/* <Col key={id} className="col-lg-6 col-md-6 col-12 g-1 h-100"> */}
-              <Card className="">
+              <Card className="hover-zoom">
                 <CardHeader className={`text-center bg-secondary text-light`}>
                   {name}
                 </CardHeader>
-                <Link to={`/project-details/${id}`} className="nav-link h-100">
-                  <CardImg
-                    src={img}
-                    width="100%"
-                    alt={name}
-                    className="img-project py-3"
-                  ></CardImg>
-                </Link>
+                {/* <Link to={`/project-details/${id}`} className="nav-link h-100"> */}
+                <CardImg
+                  src={coverImg}
+                  width="100%"
+                  alt={name}
+                  className="img-project py-3"
+                ></CardImg>
+                {/* </Link> */}
                 <Card.Body className="row justify-content-center align-items-center">
                   <Link to={`/project-details/${id}`} className="text-center">
                     <Button variant={`text-center bg-info `}>

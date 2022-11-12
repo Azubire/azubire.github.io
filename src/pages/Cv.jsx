@@ -179,7 +179,7 @@ const Cv = () => {
               <ul>
                 <li>Node Js, Express Js, PHP</li>
                 <li>Laravel, Adonis Js</li>
-                <li>SQL, MongoDB</li>
+                <li>MySql, MongoDB</li>
               </ul>
             </div>
             <div className="mt-4">

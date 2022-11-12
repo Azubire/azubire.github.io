@@ -8,6 +8,7 @@ import {
 import NavElement from "./NavElement";
 import { FaTimes } from "react-icons/fa";
 import Logo from "./Logo";
+import DownloadBtn from "./DownloadBtn";
 
 const SideNav = ({ showSideNav, handleClose, isDarkMode }) => {
   return (
@@ -22,7 +23,7 @@ const SideNav = ({ showSideNav, handleClose, isDarkMode }) => {
       >
         <OffcanvasHeader>
           <OffcanvasTitle id="offcanvasNavBarLabel" className="text-white">
-            <Logo />
+            <Logo hide={handleClose} show={showSideNav} />
           </OffcanvasTitle>
           <FaTimes onClick={handleClose} size={20} className="pointer" />
         </OffcanvasHeader>
@@ -33,11 +34,7 @@ const SideNav = ({ showSideNav, handleClose, isDarkMode }) => {
             hide={handleClose}
             show={showSideNav}
           />
-          <a href="mailto:azubirepeter@gmail.com">
-            <Button variant="outline-secondary" className="ms-3 mt-3">
-              Hire Me
-            </Button>
-          </a>
+          <DownloadBtn />
         </OffcanvasBody>
       </Offcanvas>
     </>

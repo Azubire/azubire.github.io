@@ -1,6 +1,14 @@
 import { useState, useEffect, useLayoutEffect } from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBBtn } from "mdb-react-ui-kit";
 import { useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay, A11y } from "swiper";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/a11y";
 
 const ProjectDetails = ({ projectList }) => {
   const [state, setstate] = useState({
@@ -12,18 +20,19 @@ const ProjectDetails = ({ projectList }) => {
   });
   const url = useParams();
   const projectId = parseInt(url.id);
-  const { name, desc, img, stack, siteUrl, github } = state;
   useLayoutEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   useEffect(() => {
-    const getId = async (id) => {
+    const getProject = async (id) => {
       const project = await projectList.find((item) => item.id === id);
       setstate(() => project);
     };
-    getId(projectId);
+    getProject(projectId);
   }, [projectId, projectList]);
+
+  const { name, desc, images, stack, siteUrl, github } = state;
 
   return (
     <MDBContainer className="py-5">
@@ -69,8 +78,25 @@ const ProjectDetails = ({ projectList }) => {
             )}
           </div>
         </MDBCol>
-        <MDBCol className="hover-zoom">
-          <img src={img} alt={name} height="290" className="fit w-100" />
+        <MDBCol md="6" sm="12" className="hover-zoom">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay, A11y]}
+            navigation
+            autoplay
+            // spaceBetween={50}
+            slidesPerView={1}
+          >
+            {images?.map((img, index) => (
+              <SwiperSlide>
+                <img
+                  src={img}
+                  alt={name}
+                  height="290"
+                  className="fit w-100 py-3"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </MDBCol>
       </MDBRow>
 
@@ -78,12 +104,12 @@ const ProjectDetails = ({ projectList }) => {
         <h1 className="text-center py-4">
           <span className="hero-text text-danger">Technologies</span> Used
         </h1>
-        {stack.map((item, index) => {
+        {stack?.map((item, index) => {
           const { icon, name } = item;
           return (
             <MDBCol
               key={index}
-              className="col-md-2 col-3 d-flex flex-column justify-content-center align-items-center align-content-center"
+              className="col-md-2 col-3 d-flex flex-column justify-content-center align-items-center align-content-center mb-3"
             >
               {icon}
               <p className="m-0">{name}</p>
