@@ -1,20 +1,9 @@
 import { useState } from "react";
-import {
-  Container,
-  FormCheck,
-  Nav,
-  Navbar,
-  ToggleButton,
-} from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import SideNav from "./SideNav";
 import NavElement from "./NavElement";
 import { FaBars, FaSun } from "react-icons/fa";
-import { MDBBtn } from "mdb-react-ui-kit";
 import Logo from "./Logo";
-import { FaMoon } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import FormCheckInput from "react-bootstrap/esm/FormCheckInput";
-import FormCheckLabel from "react-bootstrap/esm/FormCheckLabel";
 import DownloadBtn from "./DownloadBtn";
 
 const NavBar = ({ setIsDarkMode, isDarkMode }) => {
@@ -56,11 +45,11 @@ const NavBar = ({ setIsDarkMode, isDarkMode }) => {
             className={`${!isDarkMode && "text-dark"} pointer`}
           />
         </div>
-        <Nav className="d-none d-sm-flex">
+        <Nav className="d-none d-lg-flex">
           <NavElement />
           <DownloadBtn />
         </Nav>
-        <FaBars onClick={handleShow} className="pointer d-block d-sm-none" />
+        <FaBars onClick={handleShow} className="pointer d-block d-lg-none" />
         <SideNav
           showSideNav={showSideNav}
           handleClose={handleClose}

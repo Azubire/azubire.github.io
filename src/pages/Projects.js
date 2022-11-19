@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
-import { FaChevronRight, FaEye } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 const Projects = ({ projects }) => {
   return (
@@ -22,8 +22,8 @@ const Projects = ({ projects }) => {
       <h1 className="text-center py-5">Recent Projects</h1>
       <Swiper
         modules={[Navigation, Pagination, Autoplay, A11y]}
-        navigation={{ disabledClass: "d-none" }}
-        autoplay={{ delay: 7000 }}
+        navigation
+        autoplay
         // pagination={{ clickable: true }}
         slidesPerView={1}
         spaceBetween={50}
@@ -48,20 +48,23 @@ const Projects = ({ projects }) => {
                 <CardImg
                   src={coverImg}
                   width="100%"
+                  height="290"
                   alt={name}
-                  className="img-project py-3"
+                  className=" fit img-project py-3"
                 ></CardImg>
                 {/* </Link> */}
                 <Card.Body className="row justify-content-center align-items-center">
                   <Link to={`/project-details/${id}`} className="text-center">
-                    <Button variant={`text-center bg-info `}>
+                    <Button variant={`text-center bg-dark `}>
                       <Stack
                         direction="horizontal"
                         className="align-items-center justify-content-center"
                       >
-                        <p className="m-0 p-0 text-capitalize">View Details</p>
+                        <p className="m-0 p-0 text-capitalize text-light">
+                          View Details
+                        </p>
 
-                        <FaChevronRight className="ms-3" />
+                        <FaChevronRight className="ms-3" color="white" />
                       </Stack>
                     </Button>
                   </Link>

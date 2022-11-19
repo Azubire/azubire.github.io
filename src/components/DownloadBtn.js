@@ -1,14 +1,14 @@
 import { MDBBtn } from "mdb-react-ui-kit";
 import React from "react";
-import { Link } from "react-router-dom";
+import cv from "../assets/cv/cv.pdf";
 
 function DownloadBtn() {
   return (
-    <Link target={"_blank"} to="/my-cv">
+    <a download="azubire_peter_resume.pdf" href={cv}>
       <MDBBtn color="primary" className="ms-3">
         Download CV
       </MDBBtn>
-    </Link>
+    </a>
   );
 }
 

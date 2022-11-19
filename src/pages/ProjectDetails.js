@@ -36,7 +36,7 @@ const ProjectDetails = ({ projectList }) => {
 
   return (
     <MDBContainer className="py-5">
-      <MDBRow>
+      <MDBRow className="justify-content-center align-items-center">
         <MDBCol
           md="6"
           sm="12"
@@ -112,7 +112,7 @@ const ProjectDetails = ({ projectList }) => {
               className="col-md-2 col-3 d-flex flex-column justify-content-center align-items-center align-content-center mb-3"
             >
               {icon}
-              <p className="m-0">{name}</p>
+              <p className="m-0 text-center">{name}</p>
             </MDBCol>
           );
         })}
