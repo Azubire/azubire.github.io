@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Outlet,
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import "./assets/css/App.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -369,7 +364,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route
-          path="/portfolio"
+          path="/"
           exact
           element={
             <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}>
@@ -377,18 +372,14 @@ const App = () => {
             </Layout>
           }
         >
+          <Route exact path="/" element={<Home projectList={projectList} />} />
           <Route
-            exact
-            path="/portfolio"
-            element={<Home projectList={projectList} />}
-          />
-          <Route
-            path="/portfolio/project-details/:id"
+            path="/project-details/:id"
             element={<ProjectDetails projectList={projectList} />}
           />
         </Route>
         <Route path="*" element={<h1>404</h1>} />
-        <Route path="/portfolio/my-cv" element={<Cv />} />
+        <Route path="/my-cv" element={<Cv />} />
       </Routes>
     </Router>
   );
