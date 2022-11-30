@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
-import { FaGithub, FaPhoneAlt } from "react-icons/fa";
-import { SiInternetarchive, SiMaildotru } from "react-icons/si";
+import { FaGithub, FaGlobe, FaPhoneAlt } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import pp from "../assets/img/azubire.jpg";
 
 const workExperience = [
@@ -14,18 +14,18 @@ const workExperience = [
         stack: "",
       },
       {
-        task: "Redesigned and developed a business portfolio website (pushlinkconsult), a limited liability company that provides quality consultancy services with focus on partners such as Financial Service Providers, Hospitality, Insurance Companies,Educational Institutions, Enterprises, orporate bodies and individuals.",
+        task: "Redesigned and developed a business portfolio website (pushlinkconsult), a limited liability company that provides quality consultancy services with focus on partners such as Financial Service Providers, Hospitality, Insurance Companies,Educational Institutions, Enterprises, Corporate bodies and individuals.",
         stack: "",
       },
       {
-        task: "Manage content updates on the various platforms and maintains code.",
+        task: "Manages content updates on various inhouse products and maintains code.",
         stack: "",
       },
     ],
   },
   {
     title: "Developer intern, Norgence Inc",
-    subtitle: "Bolgatanga, Upper East Region - Oct 2021 - Jan 2022",
+    subtitle: "Bolgatanga, Upper East Region - Oct 2021 - Current",
     duties: [
       {
         task: "Designed and developed a Student Management System for internal use.",
@@ -47,14 +47,14 @@ const workExperience = [
   },
   {
     title: "Tutor Mentor, Jesse Asante (SRC President)",
-    subtitle: "koforidua Technical University - Feb 2021 - Jun 2022",
+    subtitle: "koforidua Technical University - Feb 2021 - Jun 2021",
     duties: [
       {
         task: "Led a group of 100+ first year students through practical Objected-Oriented Programming with C++.",
         stack: "",
       },
       {
-        task: "Supported Skills development by guiding and providing manifold instructonal techniques to students.",
+        task: "Supported Skills development by guiding and providing manifold instructional techniques to students.",
         stack: "",
       },
     ],
@@ -74,7 +74,7 @@ const projects = [
         task: "Developed the mobile app with React Native, TypeScript, React Native Paper,Expo, Redux",
       },
       {
-        task: "Developed a RESTful API with NodeJs/ExpressJs, MySQL and JWT consumed by the frontend mobile app, Deployed to Heroku ",
+        task: "Developed a RESTful API with NodeJs/ExpressJs, MySQL and JWT consumed by the frontend mobile app",
       },
       {
         task: "Developed an admin dashboard using NextJs, TypeScript and Material Ui to manage app content, Deployed to Vercel",
@@ -115,7 +115,7 @@ const Cv = () => {
           />
           {/* Profile */}
           <div className="text-light my-4 text-center">
-            <h2 style={{ letterSpacing: 5 }} className=" opacity-95">
+            <h2 style={{ letterSpacing: 4 }} className=" opacity-95">
               Azubire Peter
             </h2>
             <h5 style={{ letterSpacing: 2 }} className="opacity-95">
@@ -133,16 +133,34 @@ const Cv = () => {
             <p className="p-0 m-0 ms-2">+233 24 212 4312</p>
           </Stack>
           <Stack direction="horizontal" className="align-items-center mb-2">
-            <SiMaildotru />
+            <SiGmail />
             <p className="p-0 m-0 ms-2">azubirepeter@gmail.com</p>
           </Stack>
           <Stack direction="horizontal" className="align-items-center mb-2">
             <FaGithub />
-            <p className="p-0 m-0 ms-2">https://github.com/azubire</p>
+            <p className="p-0 m-0 ms-2">
+              <a
+                target="_blank"
+                href="https://github.com/azubire"
+                rel="noreferrer"
+                className="text-decoration-none text-light"
+              >
+                github.com/azubire
+              </a>
+            </p>
           </Stack>
           <Stack direction="horizontal" className="align-items-center mb-2">
-            <SiInternetarchive />
-            <p className="p-0 m-0 ms-2">https://azubire.github.io/portfolio</p>
+            <FaGlobe />
+            <p className="p-0 m-0 ms-2">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://azubire.github.io/portfolio"
+                className="text-decoration-none text-light"
+              >
+                azubire.github.io/portfolio
+              </a>
+            </p>
           </Stack>
           {/* skills */}
           <Stack className=" mt-4">
@@ -162,7 +180,7 @@ const Cv = () => {
               <ul>
                 <li>HTML5, CSS, Sass</li>
                 <li>TypeScript, JavaScript(ES5, ES6), AJAX, JQuery</li>
-                <li>React Js, Next Js</li>
+                <li>React Js, Next Js, Inertia Js</li>
                 <li>
                   Material Ui, Chakra Ui, Native Base, Bootstrap, React Native
                   Paper
@@ -193,7 +211,7 @@ const Cv = () => {
                 <li>React Native</li>
                 <li>C++, Java, kotlin</li>
                 <li>Sequelize, TypeORM, Mongoose</li>
-                <li>Git, Github, Redux, Firebase, JWT</li>
+                <li>Git, Github, Redux, Firebase</li>
               </ul>
             </div>
             <div className="mt-4">
@@ -259,7 +277,7 @@ const Cv = () => {
             With {new Date().getFullYear() - 2020}+ years of Experience as a
             developer, my uttermost goal is to build responsive, interactive,
             maintainable,scalable and high performing applications for clients.
-            I
+            I look forward to working with you.
           </p>
           <Stack>
             <Stack direction="horizontal" className="justify-content-between">
@@ -288,8 +306,10 @@ const Cv = () => {
             </Stack>
             {projects.map((item, index) => (
               <Stack key={index}>
-                <h5 className="text-info">{item.title}</h5>
-                <h6>{item.roles}</h6>
+                <Stack direction="horizontal" gap={2}>
+                  <h6>{item.roles}</h6>|
+                  <h6 className="text-info">{item.title}</h6>
+                </Stack>
                 <p>{item.subtitle}</p>
                 <ul>
                   {item.duties.map((item, index) => (

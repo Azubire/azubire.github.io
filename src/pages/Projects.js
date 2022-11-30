@@ -7,13 +7,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Autoplay, A11y } from "swiper";
+import { FaChevronRight } from "react-icons/fa";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
-import { FaChevronRight } from "react-icons/fa";
 
 const Projects = ({ projects }) => {
   return (

@@ -47,7 +47,10 @@ const ProjectDetails = ({ projectList }) => {
           <div className="d-sm-flex my-5 justify-content-center align-content-center">
             {siteUrl ? (
               <a href={siteUrl} target={"_blank"} rel="noopener noreferrer">
-                <MDBBtn color="primary mx-2 mt-3" className=" py-2">
+                <MDBBtn
+                  color="primary mx-2 mt-3"
+                  className=" py-2 text-capitalize"
+                >
                   Visit website
                 </MDBBtn>
               </a>
@@ -55,7 +58,7 @@ const ProjectDetails = ({ projectList }) => {
               <MDBBtn
                 color="primary mx-2 mt-3"
                 disabled={true}
-                className=" py-2"
+                className=" py-2 text-capitalize"
               >
                 Demo Not Online
               </MDBBtn>
@@ -63,7 +66,10 @@ const ProjectDetails = ({ projectList }) => {
 
             {github ? (
               <a href={github} target={"_blank"} rel="noopener noreferrer">
-                <MDBBtn color="success mx-2 mt-3" className=" py-2">
+                <MDBBtn
+                  color="success mx-2 mt-3"
+                  className=" py-2 text-capitalize"
+                >
                   View on github
                 </MDBBtn>
               </a>
@@ -71,7 +77,7 @@ const ProjectDetails = ({ projectList }) => {
               <MDBBtn
                 color="danger mx-2 mt-3"
                 disabled={true}
-                className=" py-2"
+                className=" py-2 text-capitalize"
               >
                 Private Github Repo
               </MDBBtn>

@@ -7,6 +7,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import profile from "../assets/img/azubire.jpg";
 
 const About = () => {
@@ -51,9 +52,9 @@ const About = () => {
           <h1>Bio</h1>
           <p>
             Hey <span className="span-texts">everyone ! &#x1F44B;</span>
-            <br /> I am Azubire Peter. A Full Stack Developer Living in Bolga,
-            Ghana. I've always loved programming but never took a step to persue
-            it until {new Date().getFullYear() - 2019} years ago, I decided to
+            <br /> I am Azubire Peter. A Full Stack Developer Living in Ghana.
+            I've always loved programming but never took a step to persue it
+            until {new Date().getFullYear() - 2019} years ago, I decided to
             start a career as a software developer. I've since been an
             enthusiast to Software Development | Web Development. I am
             constantly learning and improving on my current skill set, getting
@@ -64,7 +65,7 @@ const About = () => {
             watching movies, football and listening to good music.
           </p>
           <p className="d-inline">
-            Lets connect : <FaHandPointRight color="danger" size={20} />
+            Lets connect : <FaHandPointRight size={20} />
           </p>
           <a
             className="mx-3"
@@ -73,6 +74,9 @@ const About = () => {
             target="_blank"
           >
             <FaGithub size={25} />
+          </a>
+          <a href="mailto:azubirepeter@gmail.com">
+            <SiGmail size={25} />
           </a>
           <a
             className="mx-3"
@@ -83,7 +87,6 @@ const About = () => {
             <FaLinkedin size={25} />
           </a>
           <a
-            className="mx-3"
             href="https://twitter.com/p_azubire"
             rel="noreferrer"
             target="_blank"
