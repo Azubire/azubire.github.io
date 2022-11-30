@@ -369,7 +369,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route
-          path="/"
+          path="/portfolio"
           exact
           element={
             <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}>
@@ -377,14 +377,18 @@ const App = () => {
             </Layout>
           }
         >
-          <Route exact path="/" element={<Home projectList={projectList} />} />
           <Route
-            path="/project-details/:id"
+            exact
+            path="/portfolio"
+            element={<Home projectList={projectList} />}
+          />
+          <Route
+            path="/portfolio/project-details/:id"
             element={<ProjectDetails projectList={projectList} />}
           />
         </Route>
         <Route path="*" element={<h1>404</h1>} />
-        <Route path="/my-cv" element={<Cv />} />
+        <Route path="/portfolio/my-cv" element={<Cv />} />
       </Routes>
     </Router>
   );
