@@ -19,7 +19,7 @@ const Projects = ({ projects }) => {
   return (
     <Container>
       {/* <Row> */}
-      <h1 className="text-center py-5">Recent Projects</h1>
+      <h1 className="text-center py-5">Some Projects</h1>
       <Swiper
         modules={[Navigation, Pagination, Autoplay, A11y]}
         navigation

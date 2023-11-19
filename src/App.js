@@ -112,7 +112,7 @@ const projects = [
       ag15,
     ],
     color: "danger link-light",
-    desc: "I was the sole designer, developer of this project, a mobile application to help rural farmers get ready market for their produce conveniently. The app is built with React Native, TypeScript,Redux Toolkit,Native Base. The app is powered by a backend api running on nodejs, sequelize, MySql database. It also comes with an administrative dashboard to monitor,track and update the app's content built with NextJs, TypeScript, Chakra Ui",
+    desc: "I served as the sole designer and developer for a mobile application designed to facilitate convenient access to ready markets for rural farmers. This application, built using React Native, TypeScript, Redux Toolkit, and Native Base, aims to empower farmers by connecting them with potential buyers. The backend is powered by a Node.js API, utilizing Sequelize and a MySQL database. Additionally, the application includes an administrative dashboard created with Next.js, TypeScript, and Chakra UI. This dashboard serves the purpose of monitoring, tracking, and updating the app's content, ensuring efficient management and responsiveness to user needs.",
     stack: [
       {
         icon: <SiReact size={25} />,
@@ -299,7 +299,7 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "https://www.thelebafrica.com/",
+    siteUrl: "",
   },
 
   {

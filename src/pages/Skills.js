@@ -19,6 +19,7 @@ import {
   FaCss3Alt,
   FaSass,
   FaDocker,
+  FaBitbucket,
 } from "react-icons/fa";
 
 import { DiJqueryLogo } from "react-icons/di";
@@ -31,6 +32,9 @@ import {
   SiExpress,
   SiKotlin,
   SiTypescript,
+  SiTailwindcss,
+  SiBitbucket,
+  SiVite,
 } from "react-icons/si";
 
 const mySkills = [
@@ -75,10 +79,10 @@ const mySkills = [
     name: "CSS3",
     i: <FaCss3Alt size={50} className="text-primary" />,
   },
-  {
-    name: "Sass",
-    i: <FaSass size={50} className="text-primary" />,
-  },
+  // {
+  //   name: "Sass",
+  //   i: <FaSass size={50} className="text-primary" />,
+  // },
   {
     name: "laravel",
     i: <FaLaravel size={50} className="text-primary" />,
@@ -110,6 +114,10 @@ const mySkills = [
   {
     name: "Bootstrap",
     i: <FaBootstrap size={50} className="text-primary" />,
+  },
+  {
+    name: "Tailwindcss",
+    i: <SiTailwindcss size={50} className="text-primary" />,
   },
   {
     name: "jQuery",
@@ -147,6 +155,10 @@ const myTools = [
     i: <FaGithub size={50} className="text-primary" />,
   },
   {
+    name: "Bitbucket",
+    i: <FaBitbucket size={50} className="text-primary" />,
+  },
+  {
     name: "AdobeXD",
     i: <SiAdobexd size={50} className="text-primary" />,
   },
@@ -157,6 +169,10 @@ const myTools = [
   {
     name: "Npm",
     i: <FaNpm size={50} className="text-primary" />,
+  },
+  {
+    name: "Vite",
+    i: <SiVite size={50} className="text-primary" />,
   },
   {
     name: "Docker",
@@ -183,10 +199,10 @@ const Skills = () => {
           return (
             <Col
               key={index}
-              className="col-md-2 col-3 g-3 d-flex flex-column justify-content-center align-items-center"
+              className="col-md-2 col-3 g-3 d-flex flex-column justify-content-center align-items-center align-content-center"
             >
               {i}
-              <p className="m-0 mt-2">{name}</p>
+              <p className="m-0 mt-2 text-center">{name}</p>
             </Col>
           );
         })}
@@ -197,7 +213,7 @@ const Skills = () => {
           return (
             <Col
               key={index}
-              className="col-md-2 col-3 d-flex flex-column justify-content-center align-items-center align-content-center"
+              className="col-md-2 col-3 g-3 d-flex flex-column justify-content-center align-items-center align-content-center"
             >
               {i}
               <p className="m-0 mt-2">{name}</p>
