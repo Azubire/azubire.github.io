@@ -8,19 +8,21 @@ const Hero = (params) => {
         <Row>
           <Col className=" col-12 col-md-7 pt-5 d-flex justify-content-center align-items-center">
             <h2 className="hero-text text-sm-start py-sm-0 py-3 text-center ">
-              Hello{" "}
-              <span className="span-text text-info">there! &#x1F44B;</span>
+              <div className="pb-3">
+                Hello{" "}
+                <span className=" span-text text-info ">there! &#x1F44B;</span>
+              </div>
+              I'm Peter Azubire, a{" "}
+              <span className="span-text text-info">Full Stack Developer</span>{" "}
+              with a passion for technology.
               <br />
-              I'm <span className="span-name">Peter Azubire,</span> an
-              experienced <br />
-              <span className="span-text text-info"> Full Stack </span>
-              Developer. A tech enthusiast curious about new{" "}
-              <span className="span-text text-info">technologies</span>
-              <br />
-              <br />
-              <span className="span-text-greeth text-warning">
-                Glad to meet you! &#x1F60E;
-              </span>
+              <div className="pt-3 ">
+                I love exploring new technologies and creating innovative
+                solutions.{" "}
+                <span className="span-text-greeth text-warning">
+                  I'm happy to connect with you! &#x1F60E;
+                </span>
+              </div>
             </h2>
           </Col>
           <Col className=" col-12 col-md-5 pt-5 hover-zoom">

@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
 import "./assets/css/App.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -348,9 +353,9 @@ const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [projectList] = useState(projects);
 
-  var dark;
-  const boolean = localStorage.getItem("isDarkMode");
-  if (boolean === "true") {
+  let dark;
+  const isDark = localStorage.getItem("isDarkMode");
+  if (isDark === "true") {
     dark = true;
   } else {
     dark = false;
@@ -364,8 +369,6 @@ const App = () => {
     <Router>
       <Routes>
         <Route
-          path="/"
-          exact
           element={
             <Layout setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode}>
               <Outlet />
@@ -378,8 +381,16 @@ const App = () => {
             element={<ProjectDetails projectList={projectList} />}
           />
         </Route>
-        <Route path="/my-cv" element={<Cv />} />
-        <Route path="*" element={<h1>404</h1>} />
+        <Route path="/cv" element={<Cv />} />
+        <Route
+          path="*"
+          element={
+            <div className="d-flex flex-column justify-content-center vh-100 align-items-center">
+              <h1>404</h1>
+              <p className="">Page not found</p>
+            </div>
+          }
+        />
       </Routes>
     </Router>
   );
