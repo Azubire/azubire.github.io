@@ -10,19 +10,19 @@ const workExperience = [
     subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
     duties: [
       {
-        task: "Maintains and improves existing code by implementing new features by collaborating with team members.",
+        task: "Maintains and improves existing codebase through new features implementations",
         stack: "",
       },
       {
-        task: "Performs continuous Deployment and maintains server uptime of web applications on platforms such as Vercel, Railway.",
+        task: "Conducts continuous Deployment and ensures server uptime on platforms like Vercel, Railway.",
         stack: "",
       },
       {
-        task: "Lead development and guided frontend team to build a full-stack web application in a collabarative environment",
-        stack: "TypeScript, NodeJs, React, Github",
+        task: "Lead the development of a full-stack web application collaborating with frontend team",
+        stack: "React, Github",
       },
       {
-        task: "Built an API using NodeJs and ExpressJs and integrated it with the frontend application",
+        task: "Built an API using NodeJs and ExpressJs and integrated it with a frontend application",
         stack: "TypeScript, NodeJs, ExpressJs, MongoDB, Github, React",
       },
     ],
@@ -33,33 +33,33 @@ const workExperience = [
     subtitle: "Bolgatanga, Upper East Region, Ghana - Nov 2022 - Nov 2023",
     duties: [
       {
-        task: "Provided teaching assistance to Computer Science students in Java programming and web development.",
+        task: "Provided teaching assistance in Java programming and web development to Computer Science students",
         stack: "Java, HTML, CSS, JavaScript",
       },
       {
-        task: "Worked on existing In-house projects and implemented new features supervised by the IT team.",
-        stack: "React, Firebase, Bitbucket, Laravel",
+        task: "Contributed to in-house projects, implementing new features supervised by the IT team.",
+        stack: "",
       },
       {
-        task: "Provided customer support and network support to staff and students in the university.",
+        task: "Offered customer and network support to university staff and students",
         stack: "",
       },
     ],
   },
   {
-    title: "Lead Frontend Developer, Sate Consult",
+    title: "Full-Stack Developer, Sate Consult",
     subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
     duties: [
       {
-        task: "Lead a group of developers on projects to transform design into code. The project involved building a web application using React and Tailwind.",
+        task: "Led a team of developers in transforming designs into code, focusing on React and Tailwind.",
         stack: "React, Tailwind, Bitbucket",
       },
       {
-        task: "Refactored, and improved existing code previously written by other developers.",
+        task: "Refactored and improved existing codebase written by other developers.",
         stack: "React, Firebase, Bitbucket, Laravel",
       },
       {
-        task: "Designed and developed an admin dashboard using react and integrating with an API.",
+        task: "Designed and developed an admin dashboard using react and integrating with a API.",
         stack: "TypeScript, React, Firebase, NextJs, Laravel",
       },
     ],
@@ -69,16 +69,16 @@ const workExperience = [
     subtitle: "Koforidua, Eastern Region - Feb 2022 - Current",
     duties: [
       {
-        task: "Designed and built a full stack web application to facilitate event roadshows and bootcamps, a program designed to empower the youth through mentorship, training, and career guidance that targets all 10 Technical Universities in Ghana.",
+        task: "Manages content updates on various in-house products and maintains code.",
+        stack: "",
+      },
+      {
+        task: "Built a full-stack web application empowering youth through mentorship, training, and career guidance using Laravel, Bootstrap, and MySQL that targets 10 Technical Universities in Ghana.",
         stack: "Laravel, Boostrap and MySQL",
       },
       {
-        task: "Redesigned and developed a business portfolio website, a limited liability company that provides quality consultancy services with focus on partners such as Financial Service Providers, Hospitality, Insurance Companies,Educational Institutions, Enterprises, Corporate bodies and individuals.",
+        task: "Redesigned and developed a business portfolio website using TypeScript, NextJs, and Material-UI",
         stack: "TypeScript, NextJs, MUI",
-      },
-      {
-        task: "Manages content updates on various In-House products and maintains code.",
-        stack: "",
       },
     ],
   },
@@ -87,19 +87,19 @@ const workExperience = [
     subtitle: "Bolgatanga, Upper East Region - Oct 2021 - Oct 2023",
     duties: [
       {
-        task: "Designed and developed a Student Management System for internal use.",
+        task: "Designed and developed a Student Management System using PHP, MySQL, HTML, CSS, and JavaScript.",
         stack: "PHP, MySQL, HTML, CSS, JavaScript",
       },
       {
-        task: "Trained students on web development and computer programming including HTML, CSS, JavaScript, and PHP.",
+        task: "Trained students on web development and computer programming.",
         stack: "",
       },
       {
-        task: "Guided Junior High School (J.H.S) students in the region through basic practical computer usage. A mobile ICT lab innitative ran by the company.",
+        task: "Guided Junior High School students through basic practical computer usage in a mobile ICT lab initiative.",
         stack: "",
       },
       {
-        task: "Gave a speech on 'The Importance of Young Ladies in IT' at a seminar organized by the company in a girls training institution.",
+        task: "Delivered a speech on 'The Importance of Young Ladies in IT' at a seminar organized by the company",
         stack: "",
       },
     ],
@@ -127,16 +127,14 @@ const projects = [
     subtitle: "Koforidua Technical University, July 2022 - Sep 2022",
     duties: [
       {
-        task: "Designed a set of intuitive UI components for the Mobile App using figma ",
+        task: "Led design and development efforts for a cross-platform mobile app using React Native, TypeScript, Expo, and Redux.",
       },
       {
-        task: "Developed the mobile app with React Native, TypeScript, React Native Paper, Expo, Redux",
+        task: "Developed a RESTful API with NodeJs/ExpressJs and MySQL, consumed by the frontend mobile app.",
       },
+
       {
-        task: "Developed a RESTful API with NodeJs/ExpressJs, MySQL and it's consumed by the frontend mobile app",
-      },
-      {
-        task: "Developed an admin dashboard using NextJs, TypeScript and Material Ui to manage app content, Deployed to Vercel",
+        task: "Designed and implemented an admin dashboard using NextJs, TypeScript, and Material UI.",
       },
     ],
   },
@@ -146,16 +144,13 @@ const projects = [
     subtitle: "Koforidua Technical University, Jun 2022 - Sep 2022",
     duties: [
       {
-        task: "Designed app's and dashboard UI components using figma",
+        task: "Led design and development of a cross-platform app and dashboard using TypeScript, React Native, Redux, Expo, and NativeBase.",
       },
       {
-        task: "Developed app with TypeScript, React Native, Redux, Expo and NativeBase",
+        task: "Developed an API with NodeJs/ExpressJs, MySQL, and JWT for authentication, consumed by the frontend mobile app.",
       },
       {
-        task: "Designed and Developed an API with NodeJs/ExpressJs, MySQL and JWT for authentication that's consumed by the frontend mobile app",
-      },
-      {
-        task: "Developed an admin Dashboard for monitoring and analytics with NextJs, TypeScript, Chakra Ui",
+        task: "Designed an admin dashboard for monitoring and analytics using NextJs, TypeScript, and Chakra UI.",
       },
     ],
   },
@@ -359,7 +354,7 @@ const Cv = () => {
             {workExperience.map((item, index) => (
               <Stack key={index}>
                 <h5>{item.title}</h5>
-                <p className="d">{item.subtitle}</p>
+                <p className="font-italic">{item.subtitle}</p>
                 <ul>
                   {item.duties.map((item, index) => (
                     <li key={index}>{item.task}</li>
@@ -372,7 +367,7 @@ const Cv = () => {
           <Stack>
             <Stack direction="horizontal" className="justify-content-between">
               <h4 className="font-weight-bold border-bottom border-3 border-dark ">
-                Additional Experience
+                Notable Projects
               </h4>
             </Stack>
             {projects.map((item, index) => (

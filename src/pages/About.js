@@ -95,7 +95,7 @@ const About = () => {
           </a>
           <a
             className="mx-3"
-            href="https://www.linkedin.com/in/peter-azubire-1a3b1b229"
+            href="https://www.linkedin.com/in/peter-azubire"
             rel="noreferrer"
             target="_blank"
           >
