@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import bg from "../assets/img/bg2.png";
-import rn from "../assets/img/reactnative.png";
 
 import {
   FaJs,
   FaLaravel,
-  FaNode,
   FaNpm,
   FaReact,
   FaPhp,
@@ -15,9 +13,7 @@ import {
   FaBootstrap,
   FaNodeJs,
   FaHtml5,
-  FaJava,
   FaCss3Alt,
-  FaSass,
   FaDocker,
   FaBitbucket,
 } from "react-icons/fa";
@@ -33,7 +29,6 @@ import {
   SiKotlin,
   SiTypescript,
   SiTailwindcss,
-  SiBitbucket,
   SiVite,
 } from "react-icons/si";
 

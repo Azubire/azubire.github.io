@@ -27,17 +27,20 @@ const Home = ({ projectList }) => {
                     alt="star svg"
                     className="position-absolute w-100 rounded-circle"
                   />
-                  <h1 className="hero-text text-left display-3 fw-bold">
-                    Who am I?
-                  </h1>
+                  <h1 className="hero-text text-left  fw-bold">Who am I?</h1>
                   <p>
                     {/* I am a self-motivated developer that is focused on building
                     working solutions. I am a fast learner and constantly
                     learning new technologies in the industry */}
-                    I am an enthusiastic developer with a self-motivated
+                    {/* I am an enthusiastic developer with a self-motivated
                     approach to crafting working solutions. My ability to
                     quickly grasp new concepts allows me to stay at the
-                    forefront of evolving industry technologies.
+                    forefront of evolving industry technologies. */}
+                    Passionate full-stack developer with a knack for crafting
+                    elegant and efficient solutions. Drawn to the constant
+                    evolution of technology and its power to impact lives.
+                    Driven by the challenge of learning, collaborating, and
+                    building something meaningful.
                   </p>
                   <br />
                   <blockquote className="text-center fst-italic">
@@ -58,11 +61,18 @@ const Home = ({ projectList }) => {
                     as a developer, I build interactive, maintainable,
                     predictable,scalable, and high performing web applications
                     with a wide range of tools. */}
-                    With a solid background of {new Date().getFullYear() - 2020}
+                    {/* With a solid background of {new Date().getFullYear() - 2020}
                     + years in development, I am adept at creating web
                     applications that are interactive, maintainable,
                     predictable, scalable, and high-performing, employing a
-                    variety of tools.
+                    variety of tools. */}
+                    I help businesses achieve their goals by building
+                    applications that users love. My expertise in building
+                    intuitive interfaces, robust APIs, and optimizing
+                    performance ensures a seamless user experience and increased
+                    engagement. I'm a team player who thrives on collaborating
+                    closely with clients to understand their needs and deliver
+                    exceptional results.
                   </p>
                   <br />
                   <blockquote className="text-center">

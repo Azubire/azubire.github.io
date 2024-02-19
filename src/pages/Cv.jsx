@@ -6,75 +6,134 @@ import pp from "../assets/img/azubire.jpg";
 
 const workExperience = [
   {
-    title: "Freelance Web Developer, Push-Link Consult Ltd",
+    title: "Remote Full-Stack Developer, Awunpara",
+    subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
+    duties: [
+      {
+        task: "Maintains and improves existing code by implementing new features by collaborating with team members.",
+        stack: "",
+      },
+      {
+        task: "Performs continuous Deployment and maintains server uptime of web applications on platforms such as Vercel, Railway.",
+        stack: "",
+      },
+      {
+        task: "Lead development and guided frontend team to build a full-stack web application in a collabarative environment",
+        stack: "TypeScript, NodeJs, React, Github",
+      },
+      {
+        task: "Built an API using NodeJs and ExpressJs and integrated it with the frontend application",
+        stack: "TypeScript, NodeJs, ExpressJs, MongoDB, Github, React",
+      },
+    ],
+  },
+
+  {
+    title: "Full-Stack Developer, Bolgatanga Technical University",
+    subtitle: "Bolgatanga, Upper East Region, Ghana - Nov 2022 - Nov 2023",
+    duties: [
+      {
+        task: "Provided teaching assistance to Computer Science students in Java programming and web development.",
+        stack: "Java, HTML, CSS, JavaScript",
+      },
+      {
+        task: "Worked on existing In-house projects and implemented new features supervised by the IT team.",
+        stack: "React, Firebase, Bitbucket, Laravel",
+      },
+      {
+        task: "Provided customer support and network support to staff and students in the university.",
+        stack: "",
+      },
+    ],
+  },
+  {
+    title: "Lead Frontend Developer, Sate Consult",
+    subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
+    duties: [
+      {
+        task: "Lead a group of developers on projects to transform design into code. The project involved building a web application using React and Tailwind.",
+        stack: "React, Tailwind, Bitbucket",
+      },
+      {
+        task: "Refactored, and improved existing code previously written by other developers.",
+        stack: "React, Firebase, Bitbucket, Laravel",
+      },
+      {
+        task: "Designed and developed an admin dashboard using react and integrating with an API.",
+        stack: "TypeScript, React, Firebase, NextJs, Laravel",
+      },
+    ],
+  },
+  {
+    title: "Contract Web Developer, Push-Link Consult Ltd",
     subtitle: "Koforidua, Eastern Region - Feb 2022 - Current",
     duties: [
       {
-        task: "Designed and built a full stack web application (thelebafrica) to facilitate event roadshows and bootcamps, a program designed to empower the youth through mentorship, training, and career guidance that targets all 10 Technical Universities in Ghana.",
-        stack: "",
+        task: "Designed and built a full stack web application to facilitate event roadshows and bootcamps, a program designed to empower the youth through mentorship, training, and career guidance that targets all 10 Technical Universities in Ghana.",
+        stack: "Laravel, Boostrap and MySQL",
       },
       {
-        task: "Redesigned and developed a business portfolio website (pushlinkconsult), a limited liability company that provides quality consultancy services with focus on partners such as Financial Service Providers, Hospitality, Insurance Companies,Educational Institutions, Enterprises, Corporate bodies and individuals.",
-        stack: "",
+        task: "Redesigned and developed a business portfolio website, a limited liability company that provides quality consultancy services with focus on partners such as Financial Service Providers, Hospitality, Insurance Companies,Educational Institutions, Enterprises, Corporate bodies and individuals.",
+        stack: "TypeScript, NextJs, MUI",
       },
       {
-        task: "Manages content updates on various inhouse products and maintains code.",
+        task: "Manages content updates on various In-House products and maintains code.",
         stack: "",
       },
     ],
   },
   {
     title: "Developer intern, Norgence Inc",
-    subtitle: "Bolgatanga, Upper East Region - Oct 2021 - Current",
+    subtitle: "Bolgatanga, Upper East Region - Oct 2021 - Oct 2023",
     duties: [
       {
         task: "Designed and developed a Student Management System for internal use.",
+        stack: "PHP, MySQL, HTML, CSS, JavaScript",
+      },
+      {
+        task: "Trained students on web development and computer programming including HTML, CSS, JavaScript, and PHP.",
         stack: "",
       },
       {
-        task: "Trained students on web development.",
+        task: "Guided Junior High School (J.H.S) students in the region through basic practical computer usage. A mobile ICT lab innitative ran by the company.",
         stack: "",
       },
       {
-        task: "Guided Junior High School (J.H.S) students through basic practical computer usage. A mobile ICT lab innitative ran by the company.",
-        stack: "",
-      },
-      {
-        task: "Lectured on 'The Importance of Young Ladies in IT' at a seminar organized by the company in a girls training institution.",
+        task: "Gave a speech on 'The Importance of Young Ladies in IT' at a seminar organized by the company in a girls training institution.",
         stack: "",
       },
     ],
   },
-  {
-    title: "Tutor Mentor, Jesse Asante (SRC President)",
-    subtitle: "koforidua Technical University - Feb 2021 - Jun 2021",
-    duties: [
-      {
-        task: "Led a group of 100+ first year students through practical Objected-Oriented Programming with C++.",
-        stack: "",
-      },
-      {
-        task: "Supported Skills development by guiding and providing manifold instructional techniques to students.",
-        stack: "",
-      },
-    ],
-  },
+  // {
+  //   title: "Tutor Mentor, Jesse Asante (SRC President)",
+  //   subtitle: "koforidua Technical University - Feb 2021 - Jun 2021",
+  //   duties: [
+  //     {
+  //       task: "Led a group of 100+ first year students through practical Objected-Oriented Programming with C++.",
+  //       stack: "",
+  //     },
+  //     {
+  //       task: "Supported Skills development by guiding and providing manifold instructional techniques to students.",
+  //       stack: "",
+  //     },
+  //   ],
+  // },
 ];
 
 const projects = [
   {
     title: "Lets Recycle",
-    roles: "Freelance Designer, Developer",
+    roles: "Freelance Designer, Cross Platform App Developer",
     subtitle: "Koforidua Technical University, July 2022 - Sep 2022",
     duties: [
       {
-        task: "Designed a set of intuitive Ui components for the Mobile App using figma ",
+        task: "Designed a set of intuitive UI components for the Mobile App using figma ",
       },
       {
-        task: "Developed the mobile app with React Native, TypeScript, React Native Paper,Expo, Redux",
+        task: "Developed the mobile app with React Native, TypeScript, React Native Paper, Expo, Redux",
       },
       {
-        task: "Developed a RESTful API with NodeJs/ExpressJs, MySQL and JWT consumed by the frontend mobile app",
+        task: "Developed a RESTful API with NodeJs/ExpressJs, MySQL and it's consumed by the frontend mobile app",
       },
       {
         task: "Developed an admin dashboard using NextJs, TypeScript and Material Ui to manage app content, Deployed to Vercel",
@@ -83,20 +142,20 @@ const projects = [
   },
   {
     title: "Agro Plus",
-    roles: "Lead Designer, Developer",
+    roles: "Lead Designer, Cross Platform App Developer",
     subtitle: "Koforidua Technical University, Jun 2022 - Sep 2022",
     duties: [
       {
-        task: "Designed app interface with Figma",
+        task: "Designed app's and dashboard UI components using figma",
       },
       {
-        task: "Developed app with TypeScript, React Native, Redux, Expo, NativeBase",
+        task: "Developed app with TypeScript, React Native, Redux, Expo and NativeBase",
       },
       {
-        task: "Designed and Developed an API with NodeJs/ExpressJs, MySQL, JWT ",
+        task: "Designed and Developed an API with NodeJs/ExpressJs, MySQL and JWT for authentication that's consumed by the frontend mobile app",
       },
       {
-        task: "Designed and build an administrative Dashboard for monitoring and analytics with NextJs, TypeScript, Chakra Ui",
+        task: "Developed an admin Dashboard for monitoring and analytics with NextJs, TypeScript, Chakra Ui",
       },
     ],
   },
@@ -179,11 +238,11 @@ const Cv = () => {
               </h5>
               <ul>
                 <li>HTML5, CSS, Sass</li>
-                <li>TypeScript, JavaScript(ES5, ES6), AJAX, JQuery</li>
+                <li>TypeScript, JavaScript (ES5, ES6), AJAX, JQuery</li>
                 <li>React Js, Next Js, Inertia Js</li>
                 <li>
-                  Material Ui, Chakra Ui, Native Base, Bootstrap, React Native
-                  Paper
+                  Tailwindcss, MUI, Chakra Ui, Native Base, Bootstrap, React
+                  Native Paper
                 </li>
               </ul>
             </div>
@@ -195,7 +254,7 @@ const Cv = () => {
                 Back End
               </h5>
               <ul>
-                <li>Node Js, Express Js, PHP</li>
+                <li>Node Js/Express Js, PHP</li>
                 <li>Laravel, Adonis Js</li>
                 <li>MySql, MongoDB</li>
               </ul>
@@ -209,9 +268,12 @@ const Cv = () => {
 
               <ul>
                 <li>React Native</li>
-                <li>C++, Java, kotlin</li>
+                <li>C++, Java, kotlin, Solidity</li>
                 <li>Sequelize, TypeORM, Mongoose</li>
-                <li>Git, Github, Redux, Firebase</li>
+                <li>
+                  Git, Github, Bitbucket, Redux Toolkit, Vitest, Jest, Aws,
+                  Docker, CI/CD.
+                </li>
               </ul>
             </div>
             <div className="mt-4">
@@ -223,10 +285,8 @@ const Cv = () => {
 
               <ul>
                 <li>Problem Solving</li>
-                <li>Creative Thinking</li>
                 <li>Collaboration</li>
                 <li>Good Verbal and Written Communication</li>
-                <li>Adaptability</li>
               </ul>
             </div>
             <div className="mt-4">
@@ -235,8 +295,7 @@ const Cv = () => {
                   Education
                 </h4>
               </Stack>
-              <h5 className="font-weight-bold">Diploma</h5>
-              <h5 className=""> Computer Science</h5>
+              <h5 className="">HND Computer Science</h5>
               <h6 className="">Koforidua Technical University</h6>
             </div>
             <div className="mt-4">
@@ -274,10 +333,22 @@ const Cv = () => {
             ></div>
           </Stack>
           <p>
-            With {new Date().getFullYear() - 2020}+ years of Experience as a
+            {/* With {new Date().getFullYear() - 2020}+ years of Experience as a
             developer, my uttermost goal is to build responsive, interactive,
             maintainable,scalable and high performing applications for clients.
-            I look forward to working with you.
+            I look forward to working with you. */}
+            With over {new Date().getFullYear() - 2020}+ years of experience as
+            a Full Stack Developer, I bring a proven track record of designing,
+            developing, and maintaining responsive and high-performing web
+            applications. I have successfully led and collaborated with teams,
+            demonstrating expertise in both front-end and back-end technologies.
+            My dedication to staying abreast of industry trends and commitment
+            to continuous learning ensures that I am equipped with the latest
+            tools and techniques. I am passionate about leveraging my skills to
+            build innovative solutions and thrive in dynamic, collaborative
+            environments. Looking forward to contributing my technical
+            proficiency, leadership, and problem-solving abilities to drive
+            success in your team.
           </p>
           <Stack>
             <Stack direction="horizontal" className="justify-content-between">

@@ -14,14 +14,15 @@ const Hero = (params) => {
               </div>
               I'm Peter Azubire, a{" "}
               <span className="span-text text-info">Full Stack Developer</span>{" "}
-              with a passion for technology.
+              with a passion for building user-friendly applications.
               <br />
               <div className="pt-3 ">
-                I love exploring new technologies and creating innovative
-                solutions.{" "}
-                <span className="span-text-greeth text-warning">
-                  I'm happy to connect with you! &#x1F60E;
-                </span>
+                I'm always looking for new challenges and opportunities to
+                collaborate.
+                <br />
+              </div>
+              <div className="span-text-greeth text-warning pt-3">
+                Let's connect! &#x1F60E;
               </div>
             </h2>
           </Col>
