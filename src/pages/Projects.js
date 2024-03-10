@@ -15,6 +15,8 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import "swiper/css/a11y";
 
+//TODO: update project lists
+
 const Projects = ({ projects }) => {
   return (
     <Container>
