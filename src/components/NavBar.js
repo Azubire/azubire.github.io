@@ -39,18 +39,24 @@ const NavBar = ({ setIsDarkMode, isDarkMode }) => {
       >
         <Logo />
 
-        <Nav className="d-none d-lg-flex justify-content-center align-content-center ">
-          <NavElement />
-          <DownloadBtn />
-          <div className="d-flex ms-5 ">
+        <div className="d-flex">
+          <Nav className="d-none d-lg-flex justify-content-center align-content-center ">
+            <NavElement />
+            <DownloadBtn />
+          </Nav>
+          <div className="d-flex ms-5 justify-self-end">
             <FaSun
               onClick={toggleTheme}
-              size={24}
+              size={20}
               className={`${!isDarkMode && "text-dark"} pointer  my-auto ml-5`}
             />
           </div>
-        </Nav>
-        <FaBars onClick={handleShow} className="pointer d-block d-lg-none" />
+        </div>
+        <FaBars
+          onClick={handleShow}
+          size={20}
+          className="pointer d-block d-lg-none"
+        />
         <SideNav
           showSideNav={showSideNav}
           handleClose={handleClose}
