@@ -28,10 +28,10 @@ const Projects = ({ projects }) => {
         autoplay
         // pagination={{ clickable: true }}
         slidesPerView={1}
-        spaceBetween={50}
+        spaceBetween={10}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 3,
           },
         }}
         preventClicks
@@ -42,7 +42,7 @@ const Projects = ({ projects }) => {
           return (
             <SwiperSlide>
               {/* <Col key={id} className="col-lg-6 col-md-6 col-12 g-1 h-100"> */}
-              <Card className="hover-zoom">
+              <Card className=" ">
                 <CardHeader className={`text-center bg-secondary text-light`}>
                   {name}
                 </CardHeader>

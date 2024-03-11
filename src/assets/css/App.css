@@ -106,3 +106,11 @@
 .fit {
   object-fit: contain;
 }
+
+.mySwiper .swiper-slide {
+  opacity: 0.8;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}

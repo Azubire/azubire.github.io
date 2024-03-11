@@ -10,15 +10,20 @@ const workExperience = [
     subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
     duties: [
       {
+        task: "Currently working on a full-stack web application (an agric marketplace) using a microservice architecture (Express, React)",
+        stack: "",
+        current: true,
+      },
+      {
         task: "Maintains and improves existing codebase through new features implementations",
         stack: "",
       },
       {
-        task: "Conducts continuous Deployment and ensures server uptime on platforms like Vercel, Railway.",
+        task: "Conducts continuous Deployment and ensures server uptime on platforms like Vercel, Railway, Digital Ocean.",
         stack: "",
       },
       {
-        task: "Lead the development of a full-stack web application collaborating with frontend team",
+        task: "Led the development of a full-stack web application collaborating with frontend team",
         stack: "React, Github",
       },
       {
@@ -68,6 +73,11 @@ const workExperience = [
     title: "Contract Web Developer, Push-Link Consult Ltd",
     subtitle: "Koforidua, Eastern Region - Feb 2022 - Current",
     duties: [
+      {
+        task: "Currently working on a full-stack web application (Online learning) using a monolithic architecture (Laravel,Inertia js React)",
+        stack: "",
+        current: true,
+      },
       {
         task: "Manages content updates on various in-house products and maintains code.",
         stack: "",
@@ -158,7 +168,7 @@ const projects = [
 
 const Cv = () => {
   return (
-    <Container fluid className=" ">
+    <Container fluid style={{ fontSize: 14, fontFamily: "arial" }}>
       <Row className="">
         <Col className=" col-4 d-flex flex-column bg-secondary text-light px-3">
           {/* image  */}
@@ -209,10 +219,10 @@ const Cv = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://azubire.github.io/portfolio"
+                href="https://azubire.github.io"
                 className="text-decoration-none text-light"
               >
-                azubire.github.io/portfolio
+                azubire.github.io
               </a>
             </p>
           </Stack>
@@ -357,7 +367,12 @@ const Cv = () => {
                 <p className="font-italic">{item.subtitle}</p>
                 <ul>
                   {item.duties.map((item, index) => (
-                    <li key={index}>{item.task}</li>
+                    <li
+                      key={index}
+                      className={`${item.current ? "text-info" : ""}`}
+                    >
+                      {item.task}
+                    </li>
                   ))}
                 </ul>
               </Stack>
@@ -381,7 +396,11 @@ const Cv = () => {
                   {item.duties.map((item, index) => (
                     <Stack key={index}>
                       <li>{item.task}</li>
-                      <p className="m-0 p-0"> {item.stack}</p>
+                      <p
+                        className={`${item.current ? "text-info" : ""} p-0 m-0`}
+                      >
+                        {item.stack}
+                      </p>
                     </Stack>
                   ))}
                 </ul>

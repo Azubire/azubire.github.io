@@ -1,6 +1,6 @@
 import { Row, Col, Container } from "react-bootstrap";
 import Hero from "./Hero";
-import svg1 from "../assets/img/laptop.png";
+import svg1 from "../assets/img/dashboard.jpeg";
 import svg2 from "../assets/img/amico.svg";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -82,7 +82,11 @@ const Home = ({ projectList }) => {
                   </blockquote>
                 </Col>
                 <Col className="col-md-6 col-12 hover-zoom">
-                  <img src={svg1} alt="vector-img" className="img-fluid" />
+                  <img
+                    src={svg1}
+                    alt="vector-img"
+                    className="img-fluid rounded "
+                  />
                 </Col>
               </Row>
             </Container>

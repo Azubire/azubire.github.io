@@ -18,8 +18,8 @@ const ProjectDetails = ({ projectList }) => {
     stack: [{ icon: "", name: "" }],
     address: "",
   });
-  const url = useParams();
-  const projectId = parseInt(url.id);
+  const { id } = useParams();
+  const projectId = parseInt(id);
   useLayoutEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
@@ -60,7 +60,9 @@ const ProjectDetails = ({ projectList }) => {
                 disabled={true}
                 className=" py-2 text-capitalize"
               >
-                Demo Not Online
+                {id == 8 || id == 9
+                  ? "Awaiting official launch 🚀"
+                  : "Demo not online"}
               </MDBBtn>
             )}
 
@@ -84,13 +86,17 @@ const ProjectDetails = ({ projectList }) => {
             )}
           </div>
         </MDBCol>
-        <MDBCol md="6" sm="12" className="hover-zoom">
+        <MDBCol md="6" sm="12">
           <Swiper
             modules={[Navigation, Pagination, Autoplay, A11y]}
             navigation
             autoplay
             // spaceBetween={50}
             slidesPerView={1}
+            // thumbs={{
+            //   swiper:
+            //     thumbsSwiper && !thumbsSwiper?.destroyed ? thumbsSwiper : null,
+            // }}
           >
             {images?.map((img, index) => (
               <SwiperSlide>
@@ -98,7 +104,7 @@ const ProjectDetails = ({ projectList }) => {
                   src={img}
                   alt={name}
                   height="290"
-                  className="fit w-100 py-3"
+                  className="fit w-100 py-3 hover-zoom"
                 />
               </SwiperSlide>
             ))}

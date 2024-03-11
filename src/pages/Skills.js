@@ -30,6 +30,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiVite,
+  SiJest,
 } from "react-icons/si";
 
 const mySkills = [
@@ -167,6 +168,14 @@ const myTools = [
   },
   {
     name: "Vite",
+    i: <SiVite size={50} className="text-primary" />,
+  },
+  {
+    name: "Jest",
+    i: <SiJest size={50} className="text-primary" />,
+  },
+  {
+    name: "Vitest",
     i: <SiVite size={50} className="text-primary" />,
   },
   {

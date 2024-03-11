@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Outlet,
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 import "./assets/css/App.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,6 +19,7 @@ import { Image } from "react-bootstrap";
 import {
   SiExpo,
   SiExpress,
+  SiLaravel,
   SiReact,
   SiRedux,
   SiTypescript,
@@ -88,8 +84,130 @@ import lr12 from "./assets/img/letsrecycle/lr12.png";
 import lr13 from "./assets/img/letsrecycle/lr13.png";
 import lr14 from "./assets/img/letsrecycle/lr14.png";
 import lr15 from "./assets/img/letsrecycle/lr15.png";
+//awunpara
+import awun1 from "./assets/img/awunpara/awunpara1.jpeg";
+import awun2 from "./assets/img/awunpara/awunpara2.jpeg";
+import awun3 from "./assets/img/awunpara/awunpara3.jpeg";
+import awun4 from "./assets/img/awunpara/awunpara4.jpeg";
+import awun5 from "./assets/img/awunpara/awunpara5.jpeg";
+//awun marketplace
+import mark1 from "./assets/img/awunpara/marketplace/awunmarket1.jpeg";
+import mark2 from "./assets/img/awunpara/marketplace/awunmarket2.jpeg";
+import mark3 from "./assets/img/awunpara/marketplace/awunmarket3.jpeg";
+import mark4 from "./assets/img/awunpara/marketplace/awunmarket4.jpeg";
+import mark5 from "./assets/img/awunpara/marketplace/awunmarket5.jpeg";
+import mark6 from "./assets/img/awunpara/marketplace/awunmarket6.jpeg";
+import mark7 from "./assets/img/awunpara/marketplace/awunmarket7.jpeg";
+import mark8 from "./assets/img/awunpara/marketplace/awunmarket8.jpeg";
+//push courses
+import push1 from "./assets/img/pushlink/courses/cors1.jpeg";
+import push2 from "./assets/img/pushlink/courses/cors2.jpeg";
+import push3 from "./assets/img/pushlink/courses/cors3.jpeg";
+import push4 from "./assets/img/pushlink/courses/cors4.jpeg";
+import push5 from "./assets/img/pushlink/courses/cors5.jpeg";
+import push6 from "./assets/img/pushlink/courses/cors6.jpeg";
+import push7 from "./assets/img/pushlink/courses/cors7.jpeg";
+import push8 from "./assets/img/pushlink/courses/cors8.jpeg";
+import push9 from "./assets/img/pushlink/courses/cors9.jpeg";
+import push10 from "./assets/img/pushlink/courses/cors10.jpeg";
+import { InertiaIcon } from "./components/Icons";
 
 const projects = [
+  {
+    id: 9,
+    name: "Pushlink Courses",
+    coverImg: push1,
+    images: [
+      push1,
+      push2,
+      push3,
+      push4,
+      push5,
+      push6,
+      push7,
+      push8,
+      push9,
+      push10,
+    ],
+    color: "danger link-light",
+    desc: "This is an online courses platform. It comprises of 4 seperate interfaces (Public, Admin, Teacher and Student).This enables students to enroll in online courses, and teachers to create courses .This is monolithic project built with Laravel on the backend and Inertia Js React on the frontend.",
+    stack: [
+      {
+        icon: <SiLaravel size={25} />,
+        name: "Laravel",
+      },
+      {
+        icon: <SiReact size={25} />,
+        name: "React Js",
+      },
+      {
+        icon: <InertiaIcon />,
+        name: "Inertia Js",
+      },
+      {
+        icon: <SiTypescript size={25} />,
+        name: "TypeScript",
+      },
+    ],
+    github: "",
+    siteUrl: "",
+  },
+  {
+    id: 8,
+    name: "Awunpara Marketplace",
+    coverImg: mark1,
+    images: [mark1, mark2, mark3, mark4, mark5, mark6, mark7, mark8],
+    color: "danger link-light",
+    desc: "This is an agric marketplace for products and services. This enables users to sell and buy products and services. This is a microservice project built with React Js on the frontend and Node.js on the backend. There is also an admin dashboard for amins to manage the entire website and view metrics.",
+    stack: [
+      {
+        icon: <SiReact size={25} />,
+        name: "React Js",
+      },
+      {
+        icon: <SiExpress size={25} />,
+        name: "Express Js",
+      },
+      {
+        icon: <SiTypescript size={25} />,
+        name: "TypeScript",
+      },
+      {
+        icon: <SiRedux size={25} />,
+        name: "Redux",
+      },
+    ],
+    github: "",
+    siteUrl: "",
+  },
+  {
+    id: 7,
+    name: "Awunpara",
+    coverImg: awun1,
+    images: [awun1, awun2, awun3, awun4, awun5],
+    color: "danger link-light",
+    desc: "This is a platform for farmers to post their jobs and get farmhands to work. This was build with React Js on the frontend and Node.js on the backend.There is also an admin panel for amins to manage the entire website and view metrics.",
+    stack: [
+      {
+        icon: <SiReact size={25} />,
+        name: "React Js",
+      },
+      {
+        icon: <SiExpress size={25} />,
+        name: "Express Js",
+      },
+      {
+        icon: <SiTypescript size={25} />,
+        name: "TypeScript",
+      },
+      {
+        icon: <SiRedux size={25} />,
+        name: "Redux",
+      },
+    ],
+    github: "",
+    siteUrl: "https://www.awunpara.com",
+  },
   {
     id: 5,
     name: "Agro Plus",
