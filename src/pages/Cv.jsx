@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import { FaGithub, FaGlobe, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import pp from "../assets/img/azubire.jpg";
+import pp from "../assets/img/azubire1.jpg";
 
 const workExperience = [
   {

@@ -38,16 +38,17 @@ const NavBar = ({ setIsDarkMode, isDarkMode }) => {
         className="justify-content-between shadow-none"
       >
         <Logo />
-        <div className="d-flex justify-content-center align-content-center ">
-          <FaSun
-            onClick={toggleTheme}
-            size={24}
-            className={`${!isDarkMode && "text-dark"} pointer`}
-          />
-        </div>
-        <Nav className="d-none d-lg-flex">
+
+        <Nav className="d-none d-lg-flex justify-content-center align-content-center ">
           <NavElement />
           <DownloadBtn />
+          <div className="d-flex ms-5 ">
+            <FaSun
+              onClick={toggleTheme}
+              size={24}
+              className={`${!isDarkMode && "text-dark"} pointer  my-auto ml-5`}
+            />
+          </div>
         </Nav>
         <FaBars onClick={handleShow} className="pointer d-block d-lg-none" />
         <SideNav
