@@ -60,7 +60,7 @@ const ProjectDetails = ({ projectList }) => {
                 disabled={true}
                 className=" py-2 text-capitalize"
               >
-                {id == 8 || id == 9
+                {id === 8 || id === 9
                   ? "Awaiting official launch 🚀"
                   : "Demo not online"}
               </MDBBtn>
@@ -104,7 +104,7 @@ const ProjectDetails = ({ projectList }) => {
                   src={img}
                   alt={name}
                   height="290"
-                  className="fit w-100 py-3 hover-zoom"
+                  className="fit w-100 py-3 hover-zoom object-cover"
                 />
               </SwiperSlide>
             ))}

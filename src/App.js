@@ -150,7 +150,7 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "",
+    siteUrl: "https://staging.pushlinkconsult.com/courses/overview",
   },
   {
     id: 8,
@@ -178,7 +178,7 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "",
+    siteUrl: "https://marketplace.awunpara.com",
   },
   {
     id: 7,
