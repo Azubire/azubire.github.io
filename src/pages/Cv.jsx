@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import { FaGithub, FaGlobe, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import pp from "../assets/img/azubire1.jpg";
+import pp from "../assets/img/azubire.jpeg";
 
 const workExperience = [
   {
@@ -174,7 +174,7 @@ const Cv = () => {
           {/* image  */}
           <Image
             src={pp}
-            className="img-circle rounded  mt-4    border-info border-3"
+            className="img-circle rounded  mt-4 "
             alt="profiile photo"
           />
           {/* Profile */}

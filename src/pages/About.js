@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import profile from "../assets/img/azubire_white.jpg";
+import profile from "../assets/img/azubire.jpeg";
 
 const About = () => {
   const [isDarkMode, setIsDarkMode] = useState(null);
