@@ -178,7 +178,7 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "https://marketplace.awunpara.com",
+    siteUrl: "https://awunpara.com",
   },
   {
     id: 7,
@@ -206,7 +206,7 @@ const projects = [
       },
     ],
     github: "",
-    siteUrl: "https://www.awunpara.com",
+    siteUrl: "https://labor.awunpara.com",
   },
   {
     id: 5,
