@@ -2,51 +2,69 @@ import React from "react";
 import { Col, Container, Image, Row, Stack } from "react-bootstrap";
 import { FaGithub, FaGlobe, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import pp from "../assets/img/azubire.jpeg";
+import pp from "../assets/img/azubire.jpg";
 
 const workExperience = [
   {
-    title: "Remote Full-Stack Developer, Awunpara",
+    title: "Remote Full-Stack Developer & Team Lead, Bapx",
+    subtitle: "Kumasi, Ashanti Region, Ghana - Jul 2024 - Current",
+    duties: [
+      {
+        task: "Lead and coordinate a cross-functional team to deliver high-quality web applications, ensuring seamless collaboration between frontend and backend developers.",
+        stack: "",
+      },
+      {
+        task: "Maintain and improve the existing codebase by implementing new features and optimizing performance.",
+        stack: "",
+      },
+      {
+        task: "Oversee continuous deployment processes, ensuring server uptime and smooth deployment pipelines.",
+        stack: "",
+      },
+      {
+        task: "Develop and maintain backend systems, including building APIs.",
+        stack: "",
+      },
+    ],
+  },
+  {
+    title: "Remote Full-Stack Developer & Team Lead, Awunpara",
     subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
     duties: [
       {
-        task: "Currently working on a full-stack web application (an agric marketplace) using a microservice architecture (Express, React)",
-        stack: "",
-        current: true,
-      },
-      {
-        task: "Maintains and improves existing codebase through new features implementations",
+        task: "Led the end-to-end development of full-stack web applications, including a labor recruitment platform and a marketplace, collaborating with frontend teams to deliver seamless user experiences.",
         stack: "",
       },
       {
-        task: "Conducts continuous Deployment and ensures server uptime on platforms like Vercel, Railway, Digital Ocean.",
+        task: "Designed and built scalable APIs using Node.js and Express.js, integrating them with frontend applications to ensure robust functionality.",
         stack: "",
       },
       {
-        task: "Led the development of a full-stack web application collaborating with frontend team",
-        stack: "React, Github",
+        task: "Maintained and improved the existing codebase by implementing new features, optimizing performance, and ensuring code quality.",
+        stack: "",
       },
       {
-        task: "Built an API using NodeJs and ExpressJs and integrated it with a frontend application",
-        stack: "TypeScript, NodeJs, ExpressJs, MongoDB, Github, React",
+        task: "Managed continuous deployment processes, ensuring server uptime and smooth deployments across platforms like Vercel, Railway, and Digital Ocean.",
+        stack: "",
       },
     ],
   },
 
   {
-    title: "Full-Stack Developer, Bolgatanga Technical University",
+    title:
+      "Full-Stack Developer & Teaching Assistant, Bolgatanga Technical University",
     subtitle: "Bolgatanga, Upper East Region, Ghana - Nov 2022 - Nov 2023",
     duties: [
       {
-        task: "Provided teaching assistance in Java programming and web development to Computer Science students",
-        stack: "Java, HTML, CSS, JavaScript",
-      },
-      {
-        task: "Contributed to in-house projects, implementing new features supervised by the IT team.",
+        task: "Delivered teaching assistance in Java programming and web development, mentoring Computer Science students to build foundational programming skills.",
         stack: "",
       },
       {
-        task: "Offered customer and network support to university staff and students",
+        task: "Collaborated with the IT team to contribute to in-house projects, implementing new features and enhancing system functionality.",
+        stack: "",
+      },
+      {
+        task: "Provided technical support, including customer service and network troubleshooting, to university staff and students, ensuring smooth IT operations.",
         stack: "",
       },
     ],
@@ -56,16 +74,16 @@ const workExperience = [
     subtitle: "Kumasi, Ashanti Region, Ghana - Jan 2023 - Current",
     duties: [
       {
-        task: "Led a team of developers in transforming designs into code, focusing on React and Tailwind.",
-        stack: "React, Tailwind, Bitbucket",
+        task: "Led a team of developers in transforming UI/UX designs into functional, high-quality code, with a focus on React and Tailwind CSS for responsive and modern interfaces.",
+        stack: "",
       },
       {
-        task: "Refactored and improved existing codebase written by other developers.",
-        stack: "React, Firebase, Bitbucket, Laravel",
+        task: "Refactored and optimized existing codebases, improving performance, maintainability, and scalability.",
+        stack: "",
       },
       {
-        task: "Designed and developed an admin dashboard using react and integrating with a API.",
-        stack: "TypeScript, React, Firebase, NextJs, Laravel",
+        task: "Designed and developed a comprehensive admin dashboard using React, seamlessly integrating it with backend APIs to enable efficient data management and reporting.",
+        stack: "",
       },
     ],
   },
@@ -74,21 +92,16 @@ const workExperience = [
     subtitle: "Koforidua, Eastern Region - Feb 2022 - Current",
     duties: [
       {
-        task: "Currently working on a full-stack web application (Online learning) using a monolithic architecture (Laravel,Inertia js React)",
-        stack: "",
-        current: true,
-      },
-      {
-        task: "Manages content updates on various in-house products and maintains code.",
+        task: "Developed a full-stack online learning platform using a monolithic architecture with Laravel, Inertia.js, and React, delivering a seamless user experience for educators and learners.",
         stack: "",
       },
       {
-        task: "Built a full-stack web application empowering youth through mentorship, training, and career guidance using Laravel, Bootstrap, and MySQL that targets 10 Technical Universities in Ghana.",
-        stack: "Laravel, Boostrap and MySQL",
+        task: "Built a full-stack web application empowering youth through mentorship, training, and career guidance, targeting 10 Technical Universities in Ghana using Laravel, Bootstrap, and MySQL.",
+        stack: "",
       },
       {
-        task: "Redesigned and developed a business portfolio website using TypeScript, NextJs, and Material-UI",
-        stack: "TypeScript, NextJs, MUI",
+        task: "Redesigned and developed a business portfolio website, enhancing user experience and modernizing the interface with TypeScript, Next.js, and Material-UI.",
+        stack: "",
       },
     ],
   },
@@ -97,19 +110,19 @@ const workExperience = [
     subtitle: "Bolgatanga, Upper East Region - Oct 2021 - Oct 2023",
     duties: [
       {
-        task: "Designed and developed a Student Management System using PHP, MySQL, HTML, CSS, and JavaScript.",
-        stack: "PHP, MySQL, HTML, CSS, JavaScript",
-      },
-      {
-        task: "Trained students on web development and computer programming.",
+        task: "Designed and developed a Student Management System using PHP, MySQL, HTML, CSS, and JavaScript, streamlining administrative processes for educational institutions.",
         stack: "",
       },
       {
-        task: "Guided Junior High School students through basic practical computer usage in a mobile ICT lab initiative.",
+        task: "Trained students in web development and computer programming, fostering technical skills and knowledge among learners.",
         stack: "",
       },
       {
-        task: "Delivered a speech on 'The Importance of Young Ladies in IT' at a seminar organized by the company",
+        task: "Mentored Junior High School students in basic computer usage as part of a mobile ICT lab initiative, promoting digital literacy at the grassroots level.",
+        stack: "",
+      },
+      {
+        task: "Delivered a keynote speech on 'The Importance of Young Ladies in IT' at a company-organized seminar, advocating for diversity and inclusion in technology.",
         stack: "",
       },
     ],
@@ -137,14 +150,13 @@ const projects = [
     subtitle: "Koforidua Technical University, July 2022 - Sep 2022",
     duties: [
       {
-        task: "Led design and development efforts for a cross-platform mobile app using React Native, TypeScript, Expo, and Redux.",
+        task: "Led the design and development of a cross-platform mobile app using React Native, TypeScript, Expo, and Redux, delivering a seamless user experience across devices.",
       },
       {
-        task: "Developed a RESTful API with NodeJs/ExpressJs and MySQL, consumed by the frontend mobile app.",
+        task: "Developed a RESTful API with Node.js, Express.js, and MySQL, enabling efficient data communication between the backend and the mobile app.",
       },
-
       {
-        task: "Designed and implemented an admin dashboard using NextJs, TypeScript, and Material UI.",
+        task: "Designed and implemented an admin dashboard using Next.js, TypeScript, and Material-UI, providing a modern and intuitive interface for managing app data and operations.",
       },
     ],
   },
@@ -154,13 +166,13 @@ const projects = [
     subtitle: "Koforidua Technical University, Jun 2022 - Sep 2022",
     duties: [
       {
-        task: "Led design and development of a cross-platform app and dashboard using TypeScript, React Native, Redux, Expo, and NativeBase.",
+        task: "Led the design and development of a cross-platform mobile app and dashboard using TypeScript, React Native, Redux, Expo, and NativeBase, delivering a seamless and scalable user experience.",
       },
       {
-        task: "Developed an API with NodeJs/ExpressJs, MySQL, and JWT for authentication, consumed by the frontend mobile app.",
+        task: "Developed a secure RESTful API with Node.js, Express.js, MySQL, and JWT authentication, enabling robust data communication and user management for the frontend mobile app.",
       },
       {
-        task: "Designed an admin dashboard for monitoring and analytics using NextJs, TypeScript, and Chakra UI.",
+        task: "Designed and implemented an admin dashboard for monitoring and analytics using Next.js, TypeScript, and Chakra UI, providing a modern and intuitive interface for data visualization and management.",
       },
     ],
   },
@@ -242,8 +254,10 @@ const Cv = () => {
                 Front End
               </h5>
               <ul>
-                <li>HTML5, CSS, Sass</li>
-                <li>TypeScript, JavaScript (ES5, ES6), AJAX, JQuery</li>
+                <li>
+                  HTML5, CSS, Sass, TypeScript, JavaScript (ES5, ES6), AJAX,
+                  jQuery
+                </li>
                 <li>React Js, Next Js, Inertia Js</li>
                 <li>
                   Tailwindcss, MUI, Chakra Ui, Native Base, Bootstrap, React
@@ -264,34 +278,36 @@ const Cv = () => {
                 <li>MySql, MongoDB</li>
               </ul>
             </div>
-            <div className="mt-4">
-              <Stack direction="horizontal" className="justify-content-between">
-                <h4 className="font-weight-bold border-bottom border-3 border-light ">
-                  Miscellaneouse Skills
-                </h4>
-              </Stack>
-
+            <div>
+              <h5
+                className=" pb-1 border-1"
+                style={{ borderBottomStyle: "dashed" }}
+              >
+                Other Skills
+              </h5>
               <ul>
                 <li>React Native</li>
-                <li>C++, Java, kotlin, Solidity</li>
+                <li>C++, Java, kotlin, Solidity, Vue</li>
                 <li>Sequelize, TypeORM, Mongoose</li>
                 <li>
-                  Git, Github, Bitbucket, Redux Toolkit, Vitest, Jest, Aws,
-                  Docker, CI/CD.
+                  DevOps, Git, Github, Bitbucket, Redux Toolkit, Vitest, Jest,
+                  Aws, Docker, CI/CD, Redis.
                 </li>
               </ul>
             </div>
+
             <div className="mt-4">
               <Stack direction="horizontal" className="justify-content-between">
                 <h4 className="font-weight-bold border-bottom border-3 border-light ">
-                  Personal Skills
+                  Soft Skills
                 </h4>
               </Stack>
 
               <ul>
-                <li>Problem Solving</li>
-                <li>Collaboration</li>
                 <li>Good Verbal and Written Communication</li>
+                <li>Collaboration & Teamwork</li>
+                <li>Attention to Detail</li>
+                <li>Problem-Solving</li>
               </ul>
             </div>
             <div className="mt-4">
@@ -300,8 +316,9 @@ const Cv = () => {
                   Education
                 </h4>
               </Stack>
-              <h5 className="">HND Computer Science</h5>
-              <h6 className="">Koforidua Technical University</h6>
+              <h6 className="">
+                HND Computer Science - Koforidua Technical University
+              </h6>
             </div>
             <div className="mt-4">
               <Stack direction="horizontal" className="justify-content-between">
@@ -312,6 +329,7 @@ const Cv = () => {
 
               <ul>
                 <li>English</li>
+                <li>Gurenne</li>
               </ul>
             </div>
           </Stack>
@@ -338,22 +356,15 @@ const Cv = () => {
             ></div>
           </Stack>
           <p>
-            {/* With {new Date().getFullYear() - 2020}+ years of Experience as a
-            developer, my uttermost goal is to build responsive, interactive,
-            maintainable,scalable and high performing applications for clients.
-            I look forward to working with you. */}
-            With over {new Date().getFullYear() - 2020}+ years of experience as
-            a Full Stack Developer, I bring a proven track record of designing,
-            developing, and maintaining responsive and high-performing web
-            applications. I have successfully led and collaborated with teams,
-            demonstrating expertise in both front-end and back-end technologies.
-            My dedication to staying abreast of industry trends and commitment
-            to continuous learning ensures that I am equipped with the latest
-            tools and techniques. I am passionate about leveraging my skills to
-            build innovative solutions and thrive in dynamic, collaborative
-            environments. Looking forward to contributing my technical
-            proficiency, leadership, and problem-solving abilities to drive
-            success in your team.
+            Experienced Full Stack Developer with{" "}
+            {new Date().getFullYear() - 2020}+ years of expertise in designing,
+            developing, and maintaining high-performing web applications. Proven
+            track record of leading teams and delivering innovative solutions
+            across both front-end and back-end development. Passionate about
+            continuous learning and leveraging the latest industry trends to
+            drive success. Thrives in collaborative environments, combining
+            technical proficiency, leadership, and problem-solving skills to
+            deliver impactful results.
           </p>
           <Stack>
             <Stack direction="horizontal" className="justify-content-between">

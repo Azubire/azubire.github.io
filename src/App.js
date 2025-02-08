@@ -110,9 +110,26 @@ import push7 from "./assets/img/pushlink/courses/cors7.jpeg";
 import push8 from "./assets/img/pushlink/courses/cors8.jpeg";
 import push9 from "./assets/img/pushlink/courses/cors9.jpeg";
 import push10 from "./assets/img/pushlink/courses/cors10.jpeg";
+//bapx
+import bapx1 from "./assets/img/bapx/bapx-1.png";
+import bapx2 from "./assets/img/bapx/bapx-2.png";
+import bapx3 from "./assets/img/bapx/bapx-3.png";
+import bapx4 from "./assets/img/bapx/bapx-4.png";
+
 import { InertiaIcon } from "./components/Icons";
 
 const projects = [
+  {
+    id: 10,
+    name: "Bapx",
+    coverImg: bapx1,
+    images: [bapx1, bapx2, bapx3, bapx4],
+    color: "danger link-light",
+    desc: "Discover top talent or find your dream job effortlessly with Bapx. Explore AI-powered recruitment solutions tailored to Ghana's job market.",
+    stack: [],
+    github: "",
+    siteUrl: "https://bapx.org",
+  },
   {
     id: 9,
     name: "Pushlink Courses",
